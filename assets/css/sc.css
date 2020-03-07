@@ -480,3 +480,59 @@
 .panel-danger > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ebccd1;
 }
+
+/*** MODIFICHE ALE ***********************************************************/
+
+.carousel-caption {
+    margin: 30px auto;
+    text-align: center;
+}
+.carousel-caption .lead {
+    margin: 0;
+}
+#magic-line {
+    display: none;
+}
+
+.Events .thumbnail { 
+    max-height: 400px;
+    padding: 0;
+    border: 0;
+}
+
+.Section {}
+
+.Section-content {
+    
+}
+
+h4.Section-content__title {
+    text-align: left;
+    padding-top: 1em;
+}
+
+.Section-content__person {
+    
+}
+
+.Section-img {
+    border-radius: 100%;
+    border: 0;
+    box-shadow: 0 15px 15px rgba(0,0,0,.18);
+}
+
+.Section-link {
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.Staff {}
+
+.Staff__col {}
+
+.Staff__text {
+    
+}
