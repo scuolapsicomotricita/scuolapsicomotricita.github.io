@@ -1,0 +1,28 @@
+.Dot {
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  opacity: .5;
+  
+  &--lilla {
+    background: $lilla;
+  }
+
+  &--green {
+    background: $green;
+  }
+
+  &--red {
+    background: $red;
+  }
+
+  &--blue {
+    background: $blue;
+  }
+
+  &--white {
+    background: $white;
+  }
+}

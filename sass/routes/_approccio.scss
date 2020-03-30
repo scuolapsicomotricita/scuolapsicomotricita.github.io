@@ -1,0 +1,49 @@
+.Approccio {
+  background: white;
+  
+  .Section__header-titles {
+    align-items: flex-end;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
+    padding-bottom: 1rem;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      padding-bottom: 2rem;
+    }
+
+  }
+  
+  &__carousel {
+    @include media-breakpoint-up(lg) {
+      // max-height: 260px;
+      width: 500px;
+      margin: 0 0 0 $grid-gutter-width;
+    }
+
+    img {
+      @extend %Img;
+  
+      &:hover {
+        @extend %Img-hover;
+      }
+    }
+  }
+
+  &__text {
+    column-gap: $grid-gutter-width / 2;
+    @include media-breakpoint-up(md) {
+      column-count: 2;
+    }
+    @include media-breakpoint-up(lg) {
+      column-count: 3;
+    }
+  }
+}

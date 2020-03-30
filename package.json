@@ -1,0 +1,22 @@
+{
+  "name": "scuolapsicomotricita",
+  "version": "1.0.0",
+  "description": "- si potrebbe fare i loghi trasparenti e cambiare lo sfondo blue sotto in homepage",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "rellax": "^1.12.1",
+    "swiper": "^5.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx node-sass -w sass/** -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuus/scuolapsicomotricita.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/kuus/scuolapsicomotricita.github.io#readme"
+}

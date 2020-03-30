@@ -1,0 +1,118 @@
+// @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;800&display=swap');
+
+@import "config/variables";
+
+@import "vendor/bootstrap";
+
+@import "config/placeholders";
+
+@import "components/Carousel";
+@import "components/Dot";
+@import "components/Footer";
+@import "components/Header";
+@import "components/Pagein";
+@import "components/Paper";
+
+@import "routes/intro";
+@import "routes/eventi";
+@import "routes/centro";
+@import "routes/scuola";
+@import "routes/professione";
+@import "routes/approccio";
+@import "routes/pianostudi";
+@import "routes/staff";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding-top: $Header-height;
+  background: $blue;
+}
+
+.navbar {
+  // background: white;
+
+  &-toggler {
+    border: 0;
+    @extend %Cta;
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+.btn {
+  padding: 8px 30px;
+  @extend %Cta;
+  font-weight: $btn-font-weight;
+}
+
+.modal-footer {
+  padding: 1rem;
+  border: 0;
+  box-shadow: 0 1px 18px rgba(0,0,0,.18);
+}
+.modal-dialog-scrollable .modal-content {
+  max-height: 100vh;
+}
+
+// Section (generic for all sections)
+// -----------------------------------------------------------------------------
+.Section {
+  position: relative;
+  overflow: hidden;
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2rem;
+    }
+
+    &-titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.Title {
+  @extend %Title;
+  // padding-bottom: 3rem;
+
+  + .Subtitle {
+    // margin-top: -3rem;
+    // padding-bottom: 3rem;
+  }
+}
+
+.Subtitle {
+  @extend %Subtitle;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.Section > svg {
+  display: block;
+  // position: absolute;
+  // bottom: -150px;
+  // left: 0;
+  // right: 0;
+}

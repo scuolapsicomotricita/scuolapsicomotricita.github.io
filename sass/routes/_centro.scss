@@ -1,0 +1,58 @@
+.Centro {
+  background: $red;
+  color: white;
+
+  &__person {
+    font-weight: 500;
+
+    a {
+      color: white;
+      opacity: .8;
+      padding-left: .25em;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &__title {
+    margin: 1rem 0;
+    max-width: 280px;
+  }
+
+  &__img {
+    @extend %Img;
+    border-radius: 100%;
+    margin: 0 0 1rem;
+
+    &:hover {
+      @extend %Img-hover;
+    }
+  }
+
+  &__foot {
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: right;
+    }
+
+    > p {
+      margin: 3rem auto;
+      max-width: 400px;
+      opacity: .8;
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 0;
+      }
+    }
+
+    &-btns {
+      .btn {
+        max-width: 350px;
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+}

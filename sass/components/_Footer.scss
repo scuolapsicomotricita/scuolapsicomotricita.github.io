@@ -1,0 +1,35 @@
+.Footer {
+  background: white;
+  padding: 1rem 0;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  a {
+    padding: .25em 0;
+    display: block;
+  }
+
+  &__title {
+    padding-top: 2rem;
+  }
+  
+  &__links {
+  }
+
+  &__bottom {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    
+    .container {
+      padding-top: 1rem;
+      border-top: 1px solid $lilla;
+    }
+  }
+
+  .icon {
+    margin-right: .25em;
+  }
+}

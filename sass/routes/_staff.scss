@@ -1,0 +1,46 @@
+.Staff {
+  background: $lilla;
+
+  .card-deck {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    margin-bottom: $grid-gutter-width;
+    border-bottom-right-radius: 1em;
+    border: 0;
+    background: $red;
+    color: white;
+
+    &-title {
+      @extend %Cta;
+    }
+    
+    &-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 1em;
+      filter: grayscale(1);
+    }
+
+    &:hover .card-img-top {
+      filter: grayscale(0);
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__docenti {
+    column-gap: $grid-gutter-width;
+    padding-top: 2rem;
+    column-count: 2;
+    @include media-breakpoint-up(md) {
+      column-count: 4;
+    }
+    @include media-breakpoint-up(lg) {
+      column-count: 6;
+    }
+  }
+}

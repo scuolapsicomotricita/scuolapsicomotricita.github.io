@@ -1,0 +1,27 @@
+.swiper-pagination-bullet-active {
+  background: $primary;
+}
+
+.Carousel {
+  &__arrows {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 0 0;
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      opacity: .8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    
+    &-prev {
+      margin-right: 0.5rem;
+    }
+  }
+}

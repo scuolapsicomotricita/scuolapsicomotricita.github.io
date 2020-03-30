@@ -1,0 +1,21 @@
+.Pianostudi {
+  background: $grey;
+  
+  .Section__content-cards {
+    margin-top: 2rem;
+  }
+
+  .Section__content-text {
+    column-gap: $grid-gutter-width;
+    @include media-breakpoint-up(md) {
+      column-count: 2;
+    }
+    @include media-breakpoint-up(lg) {
+      column-count: 3;
+    }
+  }
+
+  .btn {
+    margin: 0 0 2rem;
+  }
+}

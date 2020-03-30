@@ -1,0 +1,42 @@
+.modal-dialog.Pagein {
+  width: 95%;
+  @include media-breakpoint-up(lg) {
+    width: 80%;
+  }
+
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+.Pagein {
+  min-height: 100%;
+  margin: 0 auto 0 0;
+  background: #fff;
+}
+.modal.fade .modal-dialog.Pagein {
+  transform: translate(-100%, 0);
+}
+.modal.fade.show .modal-dialog.Pagein {
+  transform: translate(0, 0);
+  flex-flow: column;
+}
+.Pagein .modal-content {
+  border: 0;
+}
+
+.Pagein {
+  .Title {
+    margin-bottom: 2rem;
+
+    + .Subtitle {
+      margin-top: -1rem;;
+      margin-bottom: 2rem;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 0 1rem;
+  }
+}

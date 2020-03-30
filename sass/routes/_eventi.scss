@@ -1,0 +1,37 @@
+.Eventi {
+  background: $lilla;
+  color: white;
+
+  .Section__content .row {
+    flex-wrap: nowrap;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    height: 350px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    @extend %Img;
+    border-radius: 100%;
+
+    &:hover {
+      @extend %Img-hover;
+      border-radius: $border-radius;
+    }
+    
+    img { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+  }
+}

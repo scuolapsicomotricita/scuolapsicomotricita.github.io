@@ -1,0 +1,19 @@
+.Scuola {
+  background: white;
+
+  .Section__content {
+    text-align: center;
+    
+    img {
+      @extend %Img;
+    }
+    
+    a:hover img {
+      @extend %Img-hover;
+    }
+  
+    .btn {
+      margin: 2rem 0;
+    }
+  }
+}

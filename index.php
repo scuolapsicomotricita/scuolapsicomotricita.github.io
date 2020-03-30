@@ -1,1039 +1,897 @@
-<?php header('Cache-Control: max-age=3600');?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
 <!--[if lte IE 7]>
-<html class="no-js ie7 lt-ie9 lt-ie8"> <![endif]-->
+<html class="no-js ie7 lt-ie9 lt-ie8">
+<![endif]-->
 <!--[if lte IE 8]>
-<html class="no-js ie8 lt-ie9"> <![endif]-->
+<html class="no-js ie8 lt-ie9">
+<![endif]-->
 <!--[if IE 9]>
-<html class="no-js ie9"> <![endif]-->
+<html class="no-js ie9">
+<![endif]-->
 <!--[if gt IE 9]><!-->
-<html class="no-js"> <!--<![endif]-->
-<head>
-    <!-- facebook -->
-
-    <meta property="og:title"
-          content="Scuola di Psicomotricità Relazionale Varese" />
-    <meta property="og:url"
-          content="http://www.scuolapsicomotricita.it/" />
-    <meta property="og:image"
-          content="http://scuolapsicomotricita.it/images/LogoK-base.png" />
-    <meta property="og:description"
-          content="“L’esperienza culturale comincia con il vivere in modo creativo, cio' che in primo luogo si manifesta nel gioco.
-          D.W. Winnicot">
-    
+<html class="no-js">
+<!--<![endif]-->
+  <head>
+    <meta property="og:title" content="Scuola di Psicomotricità Relazionale Varese" />
+    <meta property="og:url" content="http://www.scuolapsicomotricita.it/" />
+    <meta property="og:image" content="http://scuolapsicomotricita.it/static/logo-scuola-psicomotricita.jpg" />
+    <meta property="og:description" content="“L’esperienza culturale comincia con il vivere in modo creativo, cio' che in primo luogo si manifesta nel gioco. D.W. Winnicot">
     <meta charset="utf-8">
-    <title>Centro studi di Psicomotricit&agrave; relazionale</title>
-
-
-
+    <title>Centro studi di Psicomotricità relazionale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="“L’esperienza culturale comincia con il vivere in modo creativo, cio' che in primo luogo si manifesta nel gioco D.W. Winnicot">
-
-    <meta name="author" content="Massimiliano Scaletti">
-
-
-
-    <link href="assets/css/bootstrap/css/bootstrap-gliphs.css" rel="stylesheet">
-
-    <link href="assets/css/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link href="assets/css/jazzy.css" rel="stylesheet">
-    <link href="assets/css/jazzy-responsive.css" rel="stylesheet">
-    <link href="assets/css/sc.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/leaflet.css"/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets/css/leaflet.ie.css"/>
-    <![endif]-->
-    <!--[if IE 7]>
-    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
-    <![endif]-->
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <![endif]-->
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-</head>
-<body>
-
-<svg style="position:absolute;visibility:hidden" height="0" width="0" xmlns="http://www.w3.org/2000/svg">
-    <filter id="drop-shadow">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
-        <feOffset dx="12" dy="12" result="offsetblur"/>
-        <feFlood flood-color="rgba(0,0,0,0.5)"/>
-        <feComposite in2="offsetblur" operator="in"/>
-        <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-    </filter>
-</svg>
-<div id="wrapper">
-<div id="scroller">
-
-<section id="header" class="header-wrapper">
-    <div id="top"></div>
-    <div class="header-inner-left" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="40"></div>
-    <div class="header-inner-right" data-stellar-background-ratio="2.0" data-stellar-vertical-offset="10"></div>
-    <div class="header container">
+    <meta name="description" content="“L’esperienza culturale comincia con il vivere in modo creativo, ciò che in primo luogo si manifesta nel gioco - D.W. Winnicot">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous" />
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="favicons/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="favicons/favicon.png">
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="160">
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+    <path d="M23 12c0-3.037-1.232-5.789-3.222-7.778s-4.741-3.222-7.778-3.222-5.789 1.232-7.778 3.222-3.222 4.741-3.222 7.778 1.232 5.789 3.222 7.778 4.741 3.222 7.778 3.222 5.789-1.232 7.778-3.222 3.222-4.741 3.222-7.778zM21 12c0 2.486-1.006 4.734-2.636 6.364s-3.878 2.636-6.364 2.636-4.734-1.006-6.364-2.636-2.636-3.878-2.636-6.364 1.006-4.734 2.636-6.364 3.878-2.636 6.364-2.636 4.734 1.006 6.364 2.636 2.636 3.878 2.636 6.364zM8 13h5.586l-2.293 2.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4-4c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-4-4c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l2.293 2.293h-5.586c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+    <path d="M23 12c0-3.037-1.232-5.789-3.222-7.778s-4.741-3.222-7.778-3.222-5.789 1.232-7.778 3.222-3.222 4.741-3.222 7.778 1.232 5.789 3.222 7.778 4.741 3.222 7.778 3.222 5.789-1.232 7.778-3.222 3.222-4.741 3.222-7.778zM21 12c0 2.486-1.006 4.734-2.636 6.364s-3.878 2.636-6.364 2.636-4.734-1.006-6.364-2.636-2.636-3.878-2.636-6.364 1.006-4.734 2.636-6.364 3.878-2.636 6.364-2.636 4.734 1.006 6.364 2.636 2.636 3.878 2.636 6.364zM16 11h-5.586l2.293-2.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-4 4c-0.096 0.096-0.168 0.206-0.217 0.324-0.051 0.122-0.076 0.253-0.076 0.383 0 0.256 0.098 0.512 0.293 0.707l4 4c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-2.293-2.293h5.586c0.552 0 1-0.448 1-1s-0.448-1-1-1z"></path>
+    </symbol>
+    <symbol id="icon-email" viewBox="0 0 24 24">
+    <path d="M23.045 8.918v9.788c0 1.085-0.888 1.972-1.972 1.972h-18.146c-1.085 0-1.972-0.888-1.972-1.972v-9.788c0.37 0.407 0.789 0.764 1.245 1.072 2.046 1.393 4.117 2.786 6.127 4.253 1.036 0.764 2.318 1.701 3.661 1.701h0.025c1.344 0 2.626-0.937 3.661-1.701 2.009-1.455 4.080-2.86 6.139-4.253 0.444-0.308 0.863-0.666 1.233-1.072zM23.045 5.294c0 1.381-1.023 2.626-2.108 3.378-1.923 1.331-3.859 2.663-5.769 4.006-0.801 0.555-2.157 1.689-3.156 1.689h-0.025c-0.999 0-2.355-1.134-3.156-1.689-1.911-1.344-3.846-2.675-5.757-4.006-0.875-0.592-2.12-1.985-2.12-3.107 0-1.208 0.653-2.244 1.972-2.244h18.146c1.072 0 1.972 0.888 1.972 1.972z"></path>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+    <path d="M16.9 14.1c-1.4 1.4-1.4 2.8-2.8 2.8s-2.8-1.4-4.2-2.8-2.8-2.8-2.8-4.2 1.4-1.4 2.8-2.8-2.8-5.6-4.2-5.6-4.2 4.2-4.2 4.2c0 2.8 2.877 8.477 5.6 11.2s8.4 5.6 11.2 5.6c0 0 4.2-2.8 4.2-4.2s-4.2-5.6-5.6-4.2z"></path>
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24">
+    <path d="M12 11.458q1.085 0 1.849-0.764t0.764-1.849-0.764-1.849-1.849-0.764-1.849 0.764-0.764 1.849 0.764 1.849 1.849 0.764zM12 1.5q3.056 0 5.201 2.144t2.144 5.201q0 1.528-0.764 3.5t-1.849 3.697-2.144 3.229-1.799 2.391l-0.789 0.838q-0.296-0.345-0.789-0.912t-1.775-2.268-2.243-3.303-1.75-3.623-0.789-3.549q0-3.056 2.144-5.201t5.201-2.144z"></path>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+    <path d="M14.25 4.5h3.75v-4.5h-3.75c-2.895 0-5.25 2.355-5.25 5.25v2.25h-3v4.5h3v12h4.5v-12h3.75l0.75-4.5h-4.5v-2.25c0-0.407 0.343-0.75 0.75-0.75z"></path>
+    </symbol>
+    </defs>
+    </svg>
+    <nav id="Header" class="Header navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/" data-smooth>
+          <img
+            src="static/logo-header-128.png"
+            alt="logo-scuola-psicomotricita"
+            height="128"
+          />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-smooth href="#eventi">Eventi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-smooth href="#centro">Il centro studi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-smooth href="#scuola">La scuola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-smooth href="#piano-studi">Piano studi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-smooth href="#staff">Staff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-smooth href="#contatti">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <canvas resize="true" id="paper-balls"></canvas>
+    <section id="intro" class="Section Intro">
+      <!-- <div class="rellax Dot Dot--lilla" data-rellax-speed="7"></div>
+      <div class="rellax Dot Dot--green" data-rellax-speed="3"></div>
+      <div class="rellax Dot Dot--red" data-rellax-speed="5"></div> -->
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,21.3C640,0,800,0,960,0C1120,0,1280,0,1360,0L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
+      <div class="container">
         <div class="row">
-            <div class="span2"></div>
-            <div class="span10 nav-fluid">
-                <div class="navbar navbar-inverse">
-                    <div class="navbar-inner">
-                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="nav-collapse collapse">
-                            <ul id="navigation" class="nav">
-                                <li><a class="level-one goto" href="#scuola">La scuola</a></li>
-                                <li><a class="level-one goto" href="#centro">Il centro studi</a></li>
-                                <li><a class="level-one goto" href="#portfolio">Eventi</a></li>
-                                <li><a class="level-one goto" href="#piano-studi">Piano studi</a></li>
-                                <li><a class="level-one goto" href="#staff">Staff</a></li>
-                                <li><a class="level-one goto" href="#contact">Contatti</a></li>
-                            </ul>
-                        </div>
-                        <!--End Nav-collapse -->
+          <div class="col col-12 col-lg-3 Intro__col-details">
+            <div class="Intro__details">
+              <p>Scuola accredita <a href="https://www.fiscop.it/" target="_blank" rel="noopener">F.I.Sc.O.P.</a> a norma della Legge n. 4/2013</p>
+              <hr>
+              <address>
+                via Vergani, 1<br>
+                Varese (VA)<br>
+                <span>T: 347 250 65 58</span><br> 
+                <span>T: 339 617 85 72</span><br>
+              </address>
+              <p>
+                <a href="mailto:scuolapsi2018@gmail.com">scuolapsi2018@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 Intro__col-carousel">
+            <div class="swiper-container Intro__carousel">
+              <div class="swiper-wrapper">
+                <!-- Intro__carousel slide 1 -->
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="Intro__carousel-content">
+                        <blockquote class="blockquote">
+                          <p>“L’esperienza culturale comincia con il vivere in modo creativo, cio' che in primo luogo si manifesta nel gioco.”</p>
+                          <footer class="blockquote-footer"><cite title="Source Title">D.W. Winnicot</cite></footer>
+                        </blockquote>
+                      </div>
                     </div>
-                    <!-- End Navbar-inner -->
+                  </div>
                 </div>
-                <!-- End Navbar -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="span2 brand-fluid">
-                <p class="text-center branding">
-                    <img
-                        src="static/logo-scuola-psicomotricita.jpg"
-                        alt="logo-scuola-psicomotricita"
-                    />
-                </p>
-                <p>Scuola accredita <a href="https://www.fiscop.it/" target="_blank" rel="noopener">F.I.Sc.O.P.</a> a norma della Legge n. 4/2013</p>
-                <hr/>
-                <address class="text-center">
-                    via Vergani, 1<br>
-                    Varese (VA)<br>
-                    <span class="tel-number">T: 347 250 65 58</span><br> 
-                    <span class="tel-number">T: 339 617 85 72</span><br>
-                </address>
-                <p class="text-center branding maillink">
-                    <a href="mailto:scuolapsi2018@gmail.com">scuolapsi2018@gmail.com</a>
-                </p>
-
-            </div>
-            <div class="span10">
-                <!-- Start Carousel -->
-                <div id="myCarousel" class="carousel slide">
-                    <div class="carousel-inner">
-                        <!-- Slide 1 -->
-                        <div class="item active">
-                            <div class="carousel-caption">
-                                <p class="lead text-center">“L’esperienza culturale comincia con il vivere in modo creativo, cio' che in primo luogo si manifesta nel gioco."</p>
-                                <p class="lead text-right">D.W. Winnicot</p>
-                            </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="item">
-                            <div class="row-fluid">
-                                <div class="span7">
-                                    <div class="carousel-caption">
-                                        <h1>La <span>scuola</span></h1>
-
-                                        <p class="lead tahoma text-center">In psicomotricita' il metodo e'
-                                            contenuto. Il modo di porsi all'altro e', di per se', materia di relazione,
-                                            qualita' dello scambio comunicativo. </p>
-                                        <a class="btn btn-large btn-success goto" data-toggle="tooltip"
-                                           title="La scuola" href="#scuola">Approfondisci</a>
-                                    </div>
-                                </div>
-                                <div class="span5 slide-image">
-                                    <img
-                                        src="static/logo-scuola-psicomotricita.jpg"
-                                        alt="logo-scuola-psicomotricita"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="item">
-                            <div class="row-fluid">
-                                <div class="span7">
-                                    <div class="carousel-caption">
-                                        <h1 class="text-center"><span>Il Centro Studi</span></h1>
-
-                                        <p class="lead text-center">Interventi Progetti Formazione</p>
-                                        <a class="btn btn-large btn-success goto" data-toggle="tooltip"
-                                           title="Il Centro Studi di Psicomotricit&agrave;" href="#centro">Approfondisci</a>
-                                    </div>
-                                </div>
-                                <div class="span5 slide-image">
-                                    <img
-                                        src="static/logo-centro-studi-varese.jpg"
-                                        alt="logo-centro-studi-varese"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                <!-- Intro__carousel slide 2 -->
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-12 col-md-8">
+                      <div class="Intro__carousel-content">
+                        <h1>La Scuola</h1>
+                        <p>
+                          In psicomotricita' il metodo e' contenuto. Il modo di porsi all'altro e', di per se', materia di relazione, qualita' dello scambio comunicativo.
+                        </p>
+                        <a class="btn btn-primary" data-smooth href="#scuola">Approfondisci</a>
+                      </div>
                     </div>
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    <div class="col-12 col-lg-4">
+                      <img
+                        src="static/intro/tavolo-relatori.jpeg"
+                        alt="scuola-psicomotricita"
+                      >
+                    </div>
+                  </div>
                 </div>
-                <!-- End Carousel -->
+                <!-- Intro__carousel slide 3 -->
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-12 col-md-8">
+                      <div class="Intro__carousel-content">
+                        <h1>Il Centro Studi</h1>
+                        <p>Interventi Progetti Formazione</p>
+                        <a class="btn btn-primary" data-smooth href="#centro">Approfondisci</a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <img
+                        src="static/logo-centro-studi-varese.jpg"
+                        alt="logo-centro-studi-varese"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Carousel__arrows">
+                <svg class="icon Carousel__arrows-prev"><use xlink:href="#icon-arrow-left"></use></svg>
+                <svg class="icon Carousel__arrows-next"><use xlink:href="#icon-arrow-right"></use></svg>
+              </div>
             </div>
+            <!-- End Carousel -->
+          </div>
         </div>
-    </div>
-</section>
-
-<section id="portfolio" class="portfolio-wrapper">
-    <div class="portfolio-layer" data-stellar-background-ratio="2" data-stellar-vertical-offset="150"></div>
-    <div class="portfolio-layer-2" data-stellar-background-ratio="2.2" data-stellar-vertical-offset="150"></div>
-    <div class="portfolio container">
-        <div class="row-fluid content">
-            <div class="span12">
-                <h2> Eventi </h2>
-                <p class=" text-center"><br/><br/>Cliccare sull'immagine per informazioni sull'evento</p>
-            </div>
+      </div>
+    </section>
+    <section id="eventi" class="Section Eventi">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00687E" fill-opacity="1" d="M0,288L48,266.7C96,245,192,203,288,186.7C384,171,480,181,576,165.3C672,149,768,107,864,80C960,53,1056,43,1152,53.3C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <header class="container Section__header">
+        <div class="Section__header-titles">
+          <h2 class="Title">Eventi</h2>
+          <p class="Subtitle">
+            Ecco le locandine degli ultimi eventi in programma
+          </p>
         </div>
-        <div class="row-fluid Events">
-            <div class="span6">
-                <a href="/static/eventi/locandina-convegno-psicomotricita.jpg" target="_blank" rel="noopener">
-                    <img class="thumbnail" src="static/eventi/locandina-convegno-psicomotricita.jpg" alt="" />
-                </a>
+      </header>
+      <div class="container Section__content">
+        <div class="swiper-container Eventi__carousel">
+          <div class="swiper-wrapper row">
+            <div class="swiper-slide col-12 col-lg-4">
+              <a class="Eventi__link" href="/static/eventi/locandina-convegno-psicomotricita.jpg" target="_blank" rel="noopener">
+                <img class="thumbnail" src="static/eventi/locandina-convegno-psicomotricita.jpg" alt="convegno-psicomotricita" />
+              </a>
             </div>
-            <div class="span6">
-                <a href="/static/eventi/locandina-musicoterapia-canticorpi.jpg" target="_blank" rel="noopener">
-                    <img class="thumbnail" src="static/eventi/locandina-musicoterapia-canticorpi.jpg" alt="" />
-                </a>
+            <div class="swiper-slide col-12 col-lg-4">
+              <a class="Eventi__link" href="/static/eventi/locandina-musicoterapia-canticorpi.jpg" target="_blank" rel="noopener">
+                <img class="thumbnail" src="static/eventi/locandina-musicoterapia-canticorpi.jpg" alt="musicoterapia-canticorpi" />
+              </a>
             </div>
-            <div class="span6">
-                <a href="/static/eventi/locandina-seminario-intensivo.jpg" target="_blank" rel="noopener">
-                    <img class="thumbnail" src="static/eventi/locandina-seminario-intensivo.jpg" alt="" />
-                </a>
+            <div class="swiper-slide col-12 col-lg-4">
+              <a class="Eventi__link" href="/static/eventi/locandina-seminario-intensivo.jpg" target="_blank" rel="noopener">
+                <img class="thumbnail" src="static/eventi/locandina-seminario-intensivo.jpg" alt="seminario-intensivo" />
+              </a>
+              </div>
+            <div class="swiper-slide col-12 col-lg-4">
+              <a class="Eventi__link" href="/static/eventi/locandina-seminario-victor-garcia.jpg" target="_blank" rel="noopener">
+                <img class="thumbnail" src="static/eventi/locandina-seminario-victor-garcia.jpg" alt="seminario-victor-garcia" />
+              </a>
             </div>
-            <div class="span6">
-                <a href="/static/eventi/locandina-seminario-victor-garcia.jpg" target="_blank" rel="noopener">
-                    <img class="thumbnail" src="static/eventi/locandina-seminario-victor-garcia.jpg" alt="" />
-                </a>
+            <div class="swiper-slide col-12 col-lg-4">
+              <a class="Eventi__link" href="/static/eventi/locandina-percorsi-di-psicomotricita-per-bambini.jpg" target="_blank" rel="noopener">
+                <img class="thumbnail" src="static/eventi/locandina-percorsi-di-psicomotricita-per-bambini.jpg" alt="percorsi-di-psicomotricita-per-bambini" />
+              </a>
             </div>
+          </div>
+          <div class="Carousel__arrows">
+            <svg class="icon Carousel__arrows-prev"><use xlink:href="#icon-arrow-left"></use></svg>
+            <svg class="icon Carousel__arrows-next"><use xlink:href="#icon-arrow-right"></use></svg>
+          </div>
         </div>
-    </div>
-</section>
-    
-<section id="centro" class="Section chapter-title" style="background-color: #DECBE7">
-    <div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A44236" d="M0,160L60,170.7C120,181,240,203,360,192C480,181,600,139,720,133.3C840,128,960,160,1080,192C1200,224,1320,256,1380,272L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+    <section id="centro" class="Section Centro">
+      <header class="container Section__header">
+        <div class="Section__header-titles">
+          <h2 class="Title">
+            Il centro studi
+          </h2>
+          <p class="Subtitle">
+            Il centro offre interventi di psicomotricità relazionale per bambini in età prescolare e scolare, adolescenti, adulti, disabili
+          </p>
+        </div>
+      </header>
+      <div class="container Section__content">
         <div class="row">
-            <div class="span6 content">
-                <h2>
-                    <span>IL </span> CENTRO STUDI
-                </h2>
-                <div class="span6 Section-content">
-                    <p>Il centro offre interventi di psicomotricità relazionale per bambini in età prescolare e scolare, adolescenti, adulti, disabili</p>
-                    <h4 class="Section-content__title">Psicomotricità Relazionale con i bambini</h4>
-                    <ul>
-                        <li>in gruppo</li>
-                        <li>individuale</li>
-                        <li>percorso genitori figli</li>
-                    </ul>
-                    <p class="Section-content__person">
-                        Liliana Maffei <a>339 6178572</a>
-                    </p>
-                    <h4 class="Section-content__title">Formazione degli adulti</h4>
-                    <ul>
-                        <li>Sensibilizzazione</li>
-                        <li>Approfondimento</li>
-                        <li>Specializzazione</li>
-                    </ul>
-                    <p class="Section-content__person">
-                        Roberto Soru <a>347 2506558</a>
-                    </p>
-                    <h4 class="Section-content__title">Supervisione professionale</h4>
-                    <h4 class="Section-content__title">Consulenza ad enti pubblici e privati</h4>
-                    <p>per la progettazione e gestione di progetti di psicomotricità per Asili nido, scuole d’infanzia e primarie</p>
-                    <p>Il Centro Studi di Psicomotricità Relazionale si avvale di consulenze esterne di specialisti altamente qualificati in PSICOTERAPIA INFANTILE , PSICOLOGIA , PSICHIATRIA , LOGOPEDIA , ARTETERAPIA</p>
-                </div>
-            </div>
-            <div class="span6 text-center">
-                <a href="images/centrostudi.pdf" target="_blank">
-                    <img class="Section-img chapter-image" src="images/lilliroberto.png">
-                    <span class="Section-link">Scheda Centro Studi</span>
-                </a>
-                <a href="static/docs/2020-21-corso-annuale-psicomotricita-relazionale.pdf" target="_blank">
-                    <span class="Section-link">Corso annuale di psicomotricità relazionale</span>
-                </a>
-            </div>
-        </div>
-        <div class="row text-right">
-            <p class="content">
-                <a class="roundall opposite goto" href="#top"><i class="icon-arrow-up"></i></a>
-                <a class="top-line goto" href="#top">&nbsp; Torna all'inizio</a>
+          <div class="col-12 col-lg-4">
+            <img class="Centro__img" src="static/centro/formazione-adolescenti.jpg">
+            <h4 class="Centro__title">
+              Psicomotricità Relazionale con i bambini
+            </h4>
+            <ul>
+              <li>in gruppo</li>
+              <li>individuale</li>
+              <li>percorso genitori figli</li>
+            </ul>
+            <p class="Centro__person">
+              Liliana Maffei <a href="tel:3396178572"><svg class="icon"><use xlink:href="#icon-phone"></use></svg> 339 6178572</a>
             </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <img class="Centro__img" src="static/centro/formazione-adulti.jpeg">
+            <h4 class="Centro__title">
+              Formazione degli adulti
+            </h4>
+            <ul>
+              <li>Sensibilizzazione</li>
+              <li>Approfondimento</li>
+              <li>Specializzazione</li>
+              <li>Supervisione professionale</li>
+            </ul>
+            <p class="Centro__person">
+              Roberto Soru <a href="tel:3472506558"><svg class="icon"><use xlink:href="#icon-phone"></use></svg> 347 2506558</a>
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <img class="Centro__img" src="static/centro/lilliroberto.png">
+            <h4 class="Centro__title">
+              Consulenza ad enti pubblici e privati
+            </h4>
+            <p>per la progettazione e gestione di progetti di psicomotricità per Asili nido, scuole d’infanzia e primarie</p>
+          </div>
+          <div class="col-12 Centro__foot">
+            <p>Il Centro Studi di Psicomotricità Relazionale si avvale di consulenze esterne di specialisti altamente qualificati in PSICOTERAPIA INFANTILE , PSICOLOGIA , PSICHIATRIA , LOGOPEDIA , ARTETERAPIA</p>
+            <div class="Centro__foot-btns">
+              <a class="btn btn-outline-light" href="static/docs/centro-studi.pdf" target="_blank" rel="noopener">
+                Scheda Centro Studi
+              </a>
+              <a class="btn btn-outline-light" href="static/docs/2020-21-corso-annuale-psicomotricita-relazionale.pdf" target="_blank" rel="noopener">
+                Corso annuale di psicomotricità relazionale
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-
-<section id="scuola" class="chapter-title">
-    <div>
-        <div class="row">
-            <div class="span6 content"><h2><span>LA</span> SCUOLA</h2></div>
-            <div class="span6">&nbsp;</div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,208C480,235,600,245,720,240C840,235,960,213,1080,224C1200,235,1320,277,1380,298.7L1440,320L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+    <section id="scuola" class="Section Scuola">
+      <header class="container Section__header">
+        <div class="Section__header-titles">
+          <h2 class="Title">
+            La Scuola
+          </h2>
+          <p class="Subtitle">
+            Iscrizioni aperte! per colloqui di ingresso telefonare al <a href="tel:3472506558">347 250 6558</a>
+          </p>
         </div>
-        <p>
+        <div>
+          <a href="#contatti" data-smooth class="btn btn-large btn-success">
             Iscrizioni aperte!
-        </p>
+          </a>
+        </div>
+      </header>
+      <div class="container Section__content">
         <div class="row">
-            <div class="span4 text-center">
-                <a class="goto" href="#bisogno">
-                    <img class="chapter-image" src="images/corde.jpg"><!-- TODO: da cambiare -->
-                    <div class="chapter-vcard">Psicomotricista: una professione della relazione</div>
-                </a>
-            </div>
-            <div class="span4 text-center">
-                <a class="goto" href="#approccio">
-                    <img class="chapter-image" src="images/approccio.jpg">
-                    <div class="chapter-vcard">Approccio</div>
-                </a>
-            </div>
-            <div class="span4 text-center">
-                <a class="goto" href="static/docs/scheda-scuola.pdf" target="_blank">
-                    <img class="chapter-image" src="images/plenaria.jpg">
-                    <div class="chapter-vcard">Scheda Scuola</div>
-                </a>
-            </div>
-        </div>
-        <div class="row text-right">
-            <p class="content">
-                <a class="roundall opposite goto" href="#top"><i class="icon-arrow-up"></i></a>
-                <a class="top-line goto" href="#top">&nbsp; Torna all'inizio</a>
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="bisogno" class="actions-wrapper">
-    <div class="action-layer" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100"></div>
-    <div class="actions container">
-        <!-- Featured Section Calls to Action -->
-        <div class="row">
-            <div class="row content">
-                <h2>Una professione della relazione</h2>
-            </div>
-            <div class="span6">
-                <img class="action-image" src="images/leaf1.png" alt="">
-                <article class="action-block">
-                    <div class="caption">
-                        <h3>Lo psicomotricista opera:</h3>
-                        <ul>
-                            <li>Negli asili nido, nella scuola dell’infanzia e nella scuola primaria su progetti di
-                                educazione-prevenzione
-                            </li>
-                            <li>Nei servizi socio assistenziali diurni e residenziali per minori (Centri di Aggregazione
-                                giovanile, CAM..)
-                            </li>
-                            <li>Nei servizi diurni e residenziali per disabili (CSE,CDD,CRT..)</li>
-                            <li>Nei servizi pubblici e privati, diurni e residenziali dell’area Psichiatrica, delle
-                                Dipendenze e dei Disturbi del Comportamento Alimentare(DCA)
-                            </li>
-                            <li>Nelle RSA per anziani</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-            <div class="span6">
-                <img class="action-image" src="images/leaf3.png" alt="">
-                <article class="action-block">
-                    <div class="caption">
-                        <h3>Profilo professionale di riferimento</h3>
-                        <h4>Chi è</h4>
-                        <p>Lo Psicomotricista:</p>
-                        <ul>
-                            <li>Esplica la propria professionalità in forma autonoma in ambito educativo e socio-sanitario;</li>
-                            <li>Favorisce lo sviluppo psicofisico della persona e il mantenimento del suo equilibrio in tutto l’arco della vita;</li>
-                            <li>Aiuta a superare momenti di crisi anche per prevenire l’instaurarsi di situazioni patologiche;</li>
-                            <li>Opera per la valorizzazione e la mobilizzazione della persona e del suo contesto.</li>
-                        </ul>
-                        <p class="clearfix">
-                            <a data-toggle="tooltip" class="btn btn-large btn-primary pull-right feature-1" href="#feature-1">
-                                Leggi di pi&ugrave;
-                            </a>
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="row text-right">
-            <p class="content">
-                <a class="roundall opposite goto" href="#top"><i class="icon-arrow-up"></i></a>
-                <a class="top-line goto" href="#top">&nbsp; Torna all'inizio</a>
-            </p>
-
-        </div>
-    </div>
-</section>
-
-<section id="approccio" class="main-content-wrapper">
-    <div class="content-layer" data-stellar-background-ratio="-0.7" data-stellar-vertical-offset="1"></div>
-    <div class="main-content container">
-        <div class="row-fluid content">
-            <div class="span5"><h2>La scelta di un approccio formativo originale ed efficace:
-                <span>"L’autoformazione"</span></h2>
-                <p><img class="pull-right" src="images/gruppo.jpg" alt=""/></p><br>
-            </div>
-            <div class="span7">
-                <p class="lead"><em>“Insegnami il mio, non il tuo linguaggio.<br>
-                    Insegnategli il loro, non il vostro linguaggio.<br>
-                    Insegnateci il nostro, non il vostro o il loro linguaggio.”</em><br>
-                    <span class="textright">Brun, 1986</span></p>
-                <p class="lead">In queste parole di BRUN è sintetizzato il senso e la sfida di questo percorso triennale
-                    di formazione.<br>
-                    Siamo convinti da sempre che la psicomotricità, così come la formazione, è una vera “avventura di
-                    viaggiatori”. Perché il viaggiatore non è chi ama i viaggi restando attaccato alla sua terra; il
-                    viaggiatore è un uomo che si risolve nel movimento continuo, nello sforzo ininterrotto di liberarsi
-                    da ogni legame interiore ed esteriore, trovando la propria stabilità nella continua
-                    trasformazione.<br>
-                    Per questo il segreto e il valore della scuola triennale vuole essere, e sarà, in parallelo ai
-                    diversi contributi teorici, l’autoformazione individuale e di gruppo.<br>
-                    L’autoformazione, infatti, sarà la modalità che permetterà a tutti, e a ciascun allievo/a, di
-                    ritrovare la propria fiducia nell’essere costruttore del proprio sapere. E questo ci permetterà di
-                    “attraversare il bosco di notte”.<br>
-                    “Attraversare il bosco di notte significa andare là dove la paura non ci farebbe andare; significa
-                    incontrare aspetti sconosciuti ma anche agognati e radicati dentro di noi”; e l’autoformazione,
-                    proprio come “attraversare il bosco di notte”, può significare trovarci d’improvviso di fronte a
-                    domande non scontate. Attraversare il bosco di notte, in fondo, dietro l’incontro con la paura, con
-                    l’ignoto, non significa altro che “guardarsi dentro”, utilizzare spazi e volti sconosciuti per
-                    provare l’ebbrezza e lo stordimento del perdersi nell’ignoto per potersi ritrovare. E poter tornare
-                    a casa con nuove consapevolezze di sé.<br>
-                    Siamo convinti che la vera formazione non sia “dare forma” ma “emergenza di forma”, vale a dire
-                    creare condizioni perché ciascuno possa trovare il filo della sua storia e – fiduciosamente – porlo
-                    in connessione con altri fili. Da questo intreccio nessuno potrà mai disegnare in anticipo il
-                    tessuto che ne uscirà, nessuno potrà mai prevedere quale nuova storia si scriverà.<br>
-                    La vera formazione, infatti, non è accumulare informazioni, acquisire certezze, conquistare
-                    competenze per restarne schiavi e prigionieri. In altra direzione di senso, è una formazione che
-                    crea condizioni perché ciascuno possa elaborare il suo modo di cercare e utilizzare informazioni,
-                    crea condizioni perché ciascuno sappia convivere con l’incertezza e la responsabilità, perché
-                    ciascuno sia un po’ più libero.<br>
-                    E il cuore dell’autoformazione è quello di osare, di fare nessi anche audaci, inesplorati, di osare
-                    dare senso, assumersi la responsabilità di catene di senso. Perché è vero, come dice U.Galimberti,
-                    che “ la nostra libertà di scelta non è tra le cose, ma tra i significati che noi diamo alle cose,
-                    per cui noi siamo liberi perché siamo donatori di senso e perché scegliamo in base al senso che
-                    diamo.”<br>
-                    Riteniamo, infatti, che porsi domande, aprire porte, superare barriere che limitano e che
-                    impediscono la relazione e la comunicazione vera, saporita, coinvolgente, è l’esercizio quotidiano
-                    dello psicomotricista, ma soprattutto il segreto affascinante della formazione vera quella che
-                    cambia la vita e il nostro rapporto con la conoscenza.<br>
-                    Occorre riappropriarci della fiducia di saper costruire le condizioni per poter continuare ad
-                    apprendere. Perché il problema vero non è quanto poco o tanto io ho appreso, posso sempre rimediare.
-                    A ben altro livello di significato, il problema è se la formazione è capace di restituirmi la
-                    fiducia che io posso autonomamente apprendere, autonomamente cambiare...<br>
-                    Autoformazione quindi come “Costruzione” che si può definire ( in senso piagettiano ) organizzazione
-                    del mondo tramite la nostra organizzazione. E che valorizza la capacità di rimanere ingenui, di
-                    sapersi stupire e meravigliare. E portarsi in tasca tanti sassolini, per non aver paura di perdersi
-                    nel bosco. E, in ogni momento, poter tornare a casa, tra luoghi e volti che non c’è bisogno di
-                    riconoscere perché dicono di noi e delle nostre nostalgie di futuro.<br>
-                    Autoformazione per tenerci strette le mille risorse che non sappiamo di avere, che si perdono nella
-                    fretta e nella rigidità delle azioni e dei pensieri. Quelle risorse che germogliano, impreviste, da
-                    connessioni mai osate, da desideri non riconoscibili, e da incontri imprevisti e occasionali. Come
-                    gli amori selvatici.<br>
-                <p class="text-right"><i>Nuccio Puleio</i></p>
-                </p>
-            </div>
-        </div>
-        <!-- End Front Page Content -->
-        <div class="row text-right">
-            <p class="content">
-                <a class="roundall opposite goto" href="#top"><i class="icon-arrow-up"></i></a>
-                <a class="top-line goto" href="#top">&nbsp; Torna all'inizio</a>
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<section id="piano-studi" class="actions-wrapper2">
-    <div class="action-layer2" data-stellar-background-ratio="1.5" data-stellar-vertical-offset="800"></div>
-    <div class="actions container">
-        <!-- Featured Section Calls to Action -->
-        <div class="row">
-            <div class="row content">
-                <h2>IL <span>PIANO DEGLI STUDI</span></h2>
-                <div class="span2">&nbsp;</div>
-                <div class="span8 text-block">
-                    <h3>Metodologia</h3>
-                    <p>In psicomotricità il metodo è contenuto. Il modo di porsi all'altro è, di per sé, materia di relazione, qualità dello scambio comunicativo. I bambini,primi nostri ispiratori, sono insuperabili nell'intercettare, attraverso la lettura " a pelle" dell'atteggiamento dell'adulto, ogni difficoltà, imbarazzo, interesse o disinteresse dell'adulto che ha davanti. Anche le sue paure, spesso malcelate in atteggiamenti di fredda direttività o mielosa accoglienza.</p>
-                    <p>La capacità di leggere la congruenza ( e l'incongruenza) tra contenuto e relazione nella comunicazione deve essere alla base della preparazione del professionista, a partire dalla padronanza nel decodificare e modulare le PROPRIE modalità relazionali .</p>
-                    <p>Questo vale per la comunicazione educativa e terapeutica, ma anche per la comunicazione "istituzionale" nella complessità dei ruoli, delle funzioni, delle competenze. E questa particolarità determina la valenza "sociale" della formazione.</p>
-                    <p>"Saper essere" in una dimensione organizzativa è fondamentale per il successo di ogni azione o intervento educativo,riabilitativo, terapeutico.</p>
-                    <p>Per questo l'istituzione formativa deve, alla base, porsi come "modello virtuoso di funzionamento", adottando per scelta e non per convenzione, "stili" comunicativi autentici, efficaci, coerenti e solidali.</p>
-                    <p>L'istituzione che forma i professionisti (terapisti, educatori, insegnanti..) non può trascurare o eludere questa caratteristica. L'allievo apprende di più dal "clima formativo" che dalle singole unità didattiche.</p>
-                    <p class="text-right"><i>Roberto Soru</i></p>
-                    <h3>Una storia preziosa: l’autoformazione.</h3>
-                    <p>E’ una sfida alla linearità semplificatrice. Dove sfidare sta per non affidarsi, non affidarsi ad una pienezza di senso e di significato che nega alla radice l’identità di ciascuno/a allievo/a. Vogliamo praticare la convinzione che il processo di apprendimento è un processo di autoorganizzazione o falsità che regge poco quando si incontra con la vita e l’imprevisto.</p>
-                    <p>E non dimentichiamo le parole di Winnicot: “La nostra teoria comprende la convinzione che vivere creativamente sia una situazione di sanità, e che la compiacenza sia una base patologica per la vita”.</p>
-                    <p class="text-right"><i>Nuccio Puleio</i></p>
-                </div>
-                <div class="span2">&nbsp;</div>
-            </div>
-            <div class="span4">
-                <img class="action-image" src="images/leaf1.png" alt="">
-                <article class="action-block">
-                    <div class="caption">
-                        <h3>AREA DELLA FORMAZIONE TEORICA</h3>
-                        <p>Il "vero apprendimento" non è il semplice ricordare quanto si è studiato ma, a ben altro livello di significato, la capacità di rielaborare dati, conoscenze, saperi sulla base della propria esperienza, della propria curiosità, dei propri valori, delle proprie nostalgie; in una parola : autoformazione!</p>
-                        <p class="clearfix">
-                            <a data-toggle="tooltip" class="btn btn-large btn-primary pull-right feature-2" href="#feature-2">
-                                Leggi di pi&ugrave;
-                            </a>
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class="span4">
-                <img class="action-image" src="images/leaf2.png" alt="">
-                <article class="action-block">
-                    <div class="caption">
-                        <h3>AREA DELLA FORMAZIONE PRATICA-ESPERENZIALE</h3>
-                        <p>La formazione pratica, distinta tra Formazione d’aula (80 ore) e Tirocinio mirato (150 ore), si contraddistingue per un’attenzione all’individualizzazione dei percorsi tramite una specifica attività di tutoring personalizzato.</p>
-                        <p class="clearfix">
-                            <a data-toggle="tooltip" class="btn btn-large btn-primary pull-right feature-3" href="#feature-3">
-                                Leggi di pi&ugrave;
-                            </a>
-                        </p>
-                    </div>
-                </article>
-            </div>
-            <div class="span4">
-                <img class="action-image" src="images/leaf3.png" alt="">
-                <article class="action-block">
-                    <div class="caption">
-                        <h3>AREA DELLA FORMAZIONE PERSONALE</h3>
-                        <p>La cifra distintiva della formazione in psicomotricità si evidenzia nell'attenzione alla FORMAZIONE PERSONALE del futuro professionista, alla costruzione di consapevolezza, alla conoscenza approfondita delle proprie caratteristiche relazionali, alla capacità di gestione del proprio patrimonio emozionale. Senza questa base, sono convinto, ogni abilità tecnica, seppur raffinata, ogni conoscenza teorica, per quanto approfondita, rischiano di disperdersi o svalutarsi, travolte dalla domanda esistenziale del giovane disabile, del bambino in difficoltà, dell'anziano istituzionalizzato.</p>
-                        <p class="clearfix">
-                            <a data-toggle="tooltip" class="btn btn-large btn-primary pull-right feature-1" href="#feature-4">
-                                Leggi di pi&ugrave;
-                            </a>
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <!-- End Featured Section Calls to Action -->
-        <div class="row text-right">
-            <p class="content">
-                <a class="roundall opposite goto" href="#top"><i class="icon-arrow-up"></i></a>
-                <a class="top-line goto" href="#top">&nbsp; Torna all'inizio</a>
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Staff -->
-<section id="staff"class="Staff portfolio-wrapper">
-    <div class="portfolio-layer" data-stellar-background-ratio="-0.5" data-stellar-vertical-offset="40"></div>
-    <div class="portfolio container">
-        <div class="row-fluid content">
-            <div class="span12">
-                <h2>LO <span>STAFF</span> DELLA <span>SCUOLA</span></h2>
-                <p class="lead text-center"><br/><br/>Cliccate sulla foto per visualizzare la scheda personale</p>
-            </div>
-        </div>
-        <div class="row-fluid">
-            <div class="Staff__col span6">
-                <a href="#soru" class="first">
-                    <div class="thumbnail">
-                        <img src="images/FOTO/soru.jpg" alt=""/>
-                        <div class="Staff__text">
-                            <h4>Roberto Soru</h4>
-                            <p>Fondatore, direttore scientifico e responsabile della formazione personale</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="Staff__col span6">
-                <a href="#maffei" class="sixth">
-                    <div class="thumbnail">
-                        <img src="images/FOTO/maffei.jpg" alt=""/>
-                        <div class="Staff__text">
-                            <h4>Liliana Maffei</h4>
-                            <p>Co-fondatrice e referente della formazione personale</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row-fluid">
-            <div class="Staff__col span6">
-                <a href="#schenato" class="fifth">
-                    <div class="thumbnail">
-                        <img src="images/FOTO/schenato.jpg" alt=""/>
-                        <div class="Staff__text">
-                            <h4>Marta Schenato</h4>
-                            <p>Monitoraggio e Tutoring</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="Staff__col span6">
-                <a href="#melissa" class="fifth">
-                    <div class="thumbnail">
-                        <img src="images/FOTO/schenato.jpg" alt=""/>
-                        <div class="Staff__text">
-                            <h4>Melissa Sironi</h4>
-                            <p>Referente amministrativa</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-            </div>
-    <div class="row text-right">
-        <p class="content">
-            <a class="roundall opposite goto" href="#top"><i class="icon-arrow-up"></i></a>
-            <a class="top-line goto" href="#top">&nbsp; Torna all'inizio</a>
-        </p>
-    </div>
-</section>
-
-<!-- Start Footer -->
-<footer class="footer-wrapper">
-    <div class="footer container">
-        <div class="container">
-            <div class="row">
-                <div class="span5">
-                    <section class="footer-column-one">
-                        <h4 class="footer-title">Contatti</h4>
-                        <form class="form-horizontal text-left validate-form clearfix" action="assets/php/mail.php" method="POST" role="form">
-                            <fieldset>
-                                <label>Nome</label>
-                                <input class="span5 contact-form form-control validate-field required" type="text" data-validation-type="string" id="form-name" placeholder="Nome" name="name">
-                                <label>Indirizzo email</label>
-                                <input class="span5 contact-form form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email" name="email">
-                                <label>Telefono</label>
-                                <input class="span5 contact-form form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Telefono" name="contact_number">
-                                <!-- Textarea -->
-                                <label>Messaggio</label>
-                                <div class="textarea">
-                                    <textarea class="span5 contact-form" name="message"></textarea>
-                                </div>
-                                <div class="text-right">
-                                    <img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php">
-                                    <input type="text" class="span5 contact-form" id="form-captcha" placeholder="Inserire il testo del riquadro" name="captcha">
-                                    <span id="form-captcha-refresh" class="gliphicon gliphicon-refresh" title="Ricarica"></span>
-                                </div>
-                                <div class="text-left">
-                                    <br/>
-                                    <button type="submit" class="btn btn-primary btn-large">invia</button>
-                                </div>
-                                <div class="form-group form-general-error-container"></div>
-                            </fieldset>
-                        </form>
-                    </section>
-                </div>
-                <div class="span5 offset2">
-                    <section class="footer-column-two">
-                        <h4 class="footer-title">Dicono di noi</h4>
-                        <section id="testamonials" class="carousel testamonial slide">
-                            <div class="carousel-inner">
-                                <article class="active item">
-                                    <blockquote>
-                                        <i class="icon-quote-left icon-2x pull-left icon-jazzy"></i>
-                                        <p>"...Che tutte le persone che vengono a questa scuola possano sentire l'amore dei suoi creatori"</p>
-                                        <small class="text-right">Victor Garcìa</small>
-                                    </blockquote>
-                                </article>
-                            </div>
-                            <ol class="carousel-indicators">
-                                <li data-target="#testamonials" data-slide-to="0" class="active"></li>
-                                <!--<li data-target="#testamonials" data-slide-to="1"></li>-->
-                                <!--<li data-target="#testamonials" data-slide-to="2"></li>-->
-                            </ol>
-                        </section>
-                        <hr>
-                        <h4 class="footer-title"> Link amici</h4>
-                        <section id="friendlylinks">
-                            <div class="span2">
-                                <article>
-                                    <blockquote>
-                                        <a href="https://www.fiscop.it/" target="_blank" rel="noopener">
-                                            <i class="icon-arrow-right"></i>
-                                            FISCOP
-                                        </a>
-                                    </blockquote>
-                                </article>
-                            </div>
-                            <div class="span2">
-                                <article>
-                                    <blockquote>
-                                        <a href="http://www.centrogdl.org/">
-                                            <i class="icon-arrow-right"></i>
-                                            Globalit&agrave; dei linguaggi
-                                        </a>
-                                    </blockquote>
-                                </article>
-                            </div>
-                            <div class="span2">
-                                <article>
-                                    <blockquote>
-                                        <a href="http://www.scnet.it/">
-                                            <i class="icon-arrow-right"></i>
-                                            Scaletti Consulting
-                                        </a>
-                                    </blockquote>
-                                </article>
-                            </div>
-                        </section>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div id="contact" class="footer-credits">
-            <div class="container">
-                <div class="row">
-                    <div class="span8">
-                        <p class="text-left pull-left">
-                            &copy; 2020 Centro Studi di Psicomotricità Relazionale di Varese | All rights Reserved
-                        </p>
-                    </div>
-                    <div class="span4">
-                        <!-- Start Social Media Icons & Goto Top Link -->
-                        <ul class="social-media-icons pull-right">
-                            <li>
-                                <a class="roundall"
-                                   href="https://www.facebook.com/centrostudipsicomotricitavarese"
-                                >
-                                    <i class="icon-facebook"></i>
-                                    Centro Studi di Psicomotricità Relazionale Varese
-                                </a>
-                            </li>
-                            <li>
-                                <a class="roundall"
-                                   href="https://www.facebook.com/scuolapsicomotricitavarese/"
-                                >
-                                    <i class="icon-facebook"></i>
-                                    Scuola di Psicomotricità Relazionale Varese
-                                </a>
-                            </li>
-                            <li>
-                                <a class="roundall opposite goto" href="#top">
-                                    <i class="icon-arrow-up"></i>
-                                </a>
-                                <a class="top-line goto" href="#top">&nbsp; Torna all'inizio</a>
-                            </li>
-                        </ul>
-                        <!-- End Social Media Icons & Goto Top Link -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Feature 1 -->
-<div class="slide-page" id="feature-1">
-    <div class="row-fluid">
-        <div class="span8">
-        <h4>Chi è</h4>
-        <p>Lo Psicomotricista</p>
-        <ul>
-            <li>Esplica la propria professionalità in forma autonoma in ambito educativo e socio-sanitario;</li>
-            <li>Favorisce lo sviluppo psicofisico della persona e il mantenimento del suo equilibrio in tutto l’arco della vita;</li>
-            <li>Aiuta a superare momenti di crisi anche per prevenire l’instaurarsi di situazioni patologiche;</li>
-            <li>Opera per la valorizzazione e la mobilizzazione della persona e del suo contesto.</li>
-        </ul>
-        <h4>Che cosa fa</h4>
-        <p>Lo Psicomotricista postula alla base del proprio intervento l’unità della persona, riconoscendo e favorendo l’interazione e la piena integrazione tra l’area motoria, cognitiva e affettiva.</p>
-        <p>Attiva e favorisce nell’altro la progressiva conoscenza a cominciare dal sé corporeo e dall’ambiente, attraverso la motricità e le capacità simboliche della persona. Svolge attività di osservazione, valutazione e bilancio psicomotorio, anche nell’ambito di un lavoro di équipe. Elabora, anche in équipe multidisciplinare, la definizione del progetto di intervento, volto all’individuazione e al superamento delle difficoltà e dei disagi della persona.</p>
-        <p>Attua i progetti di intervento nei seguenti ambiti:</p>
-        <ul>
-            <li>EDUCATIVO-PREVENTIVO: gli interventi sono rivolti a favorire un armonico sviluppo psicomotorio, a mantenere un adeguato equilibrio e a prevenire disagi della relazione e degli apprendimenti nelle persone in età evolutiva; gli effetti dell’educazione e prevenzione psicomotoria si estendono inoltre a favorire l’integrazione, l’accettazione e la valorizzazione delle differenze personali. Tali interventi possono essere attuati anche in situazioni di rischio sociale e in altre condizioni di difficoltà personali.</li>
-            <li>SOCIALE: lo Psicomotricista svolge la sua attività in ambito sociale per favorire i processi di inserimento e integrazione sociale, per migliorare la comunicazione e l’uso di una adeguata espressività corporea nella relazione umana, coinvolgendo anche gli adulti (genitori, educatori, insegnanti, operatori dell’ambito sociosanitario e assistenziale)  sia a livello personale che nell’acquisizione di strumenti per la propria attività professionale.</li>
-            <li>DI AIUTO: lo Psicomotricista attua interventi di aiuto psicomotorio con persone in età evolutiva e con persone in età adulta o anziani che presentano difficoltà connesse all’alterazione delle funzioni psicomotorie e della comunicazione.</li>
-        </ul>
-        <h4>Come lo fa</h4>
-        <p>L’approccio psicomotorio ha come terreno specifico di intervento il rapporto tra il corpo e i processi psichici nella costruzione dell’identità attraverso la via corporea, nonchè il rapporto tra corpo ed espressività, qualunque sia il livello di capacità motorie della persona.</p>
-        <p>Utilizzando la conoscenza di questi rapporti e la capacità peculiare di lettura della comunicazione non verbale (movimento, tono, postura, gesto, sguardo, uso degli oggetti, dello spazio, ecc.) lo Psicomotricista interviene nella ralazione con metodologie psicomotorie (attività percettive, cognitive, ludico espressive, rilassamento, comunicazione non verbale, ecc.) con l’obiettivo di favorire in primo luogo il processo di integrazione fra i diversi piani espressivi e conoscitivi che stanno alla base di quel fenomeno complesso che è la costruzione dell’identità.</p>
-        <p>Questo obiettivo si realizza non in un percorso di insegnamento-apprendimento di abilità, quanto in contesti comunicativi, dove la rete di scambi rende possibile il riconoscimento dell’altro, lo stimolo e il riconoscimento delle sue risorse.</p>
-        <p>Lo Psicomotricista ha fondamenti epistemiologici, obiettivi e modalità operative peculiari che lo contraddistinguono come figura professionale specifica.</p>
-        <h4>Come si forma</h4>
-        <p>Per svolgere adeguatamente queste funzioni lo Psicomotricista necessita di:</p>
-        <ul>
-            <li>Una formazione teorica ampia, centrata su una visione globale della persona, con particolare allo sviluppo psicomotorio del bambino, nel superamento della scissione mente-corpo  e nel riconoscimento dell’individuo come espressione del suo gruppo di appartenenza;</li>
-            <li>Una formazione personale approfondita, quale percorso di esperienza la cui finalità è l’acquisizione delle capacità di ascolto: dalla percezione delle modificazioni somatiche relative al proprio coinvolgimento emozionale nella relazione con l’altro, alla capacità di decentrarsi verso l’altro, attraverso l’adattamento tonico-emozionale, per giungere alla lettura e alla comprensione del senso della sua espressività motoria.</li>
-            <li>Una formazione professionale specifica, che vede al centro del lavoro l’intervento con la persona nella sua globalità e si realizza attraverso il tirocinio, momenti di elaborazione delle esperienze, supervisioni degli interventi effettuati, seminari sui temi della psicomotricità (atteggiamento dello psicomotricista, l’attività psicomotoria, l’osservazione della persona, modalità e parametri dell’osservazione psicomotoria).</li>
-        </ul>
-        <p>Dal 1972 la formazione degli psicomotricisti si realizza presso scuole di Psicomotricità presenti sul territorio nazionale.</p>
-        <p>Attualmente la formazione si effettua con corsi triennali di almeno 2400 ore, ripartite in tre aree di formazione (Formazione Personale, Teorica e Pratica) secondo quanto concordato a livello nazionale ed europeo.</p>
-        </div>
-        <div class="span4">
-            <h2>Profilo professionale di riferimento</h2>
-            <a href="https://www.fiscop.it/profilo-professionale/" target="_blank" rel="noopener">
-                <img src="static/logo-fiscop.jpg" alt=""/>
+          <div class="col-12 col-lg-4">
+            <a data-smooth href="#professione">
+              <img src="static/scuola/lancio-alloro.jpeg">
+              <span class="btn btn-outline-primary">
+                Psicomotricista
+              </span>
             </a>
-            <p>
-                <a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">
-                    torna indietro
+          </div>
+          <div class="col-12 col-lg-4">
+            <a data-smooth href="#approccio">
+              <img src="static/scuola/lezione-all-aperto.jpg">
+              <span class="btn btn-outline-primary">
+                Approccio formativo
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-lg-4">
+            <a href="static/docs/2019-20-scheda-scuola.pdf" target="_blank">
+              <img src="static/scuola/gruppo.jpg">
+              <span class="btn btn-outline-primary">
+                Scheda Scuola
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,154.7C384,149,480,139,576,128C672,117,768,107,864,101.3C960,96,1056,96,1152,117.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="professione" class="Section Section--inbetween Professione">
+      <header class="container Section__header">
+        <div class="Section__header-titles">
+          <h3 class="Title">
+            Psicomotricista
+          </h3>
+          <p class="Subtitle">
+            Una professione della relazione
+          </p>
+        </div>
+      </header>
+      <div class="container Section__content">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>Lo psicomotricista opera:</h3>
+            <ul>
+              <li>Negli asili nido, nella scuola dell’infanzia e nella scuola primaria su progetti di educazione-prevenzione</li>
+              <li>Nei servizi socio assistenziali diurni e residenziali per minori (Centri di Aggregazione giovanile, CAM..) </li>
+              <li>Nei servizi diurni e residenziali per disabili (CSE,CDD,CRT..)</li>
+              <li>Nei servizi pubblici e privati, diurni e residenziali dell’area Psichiatrica, delle Dipendenze e dei Disturbi del Comportamento Alimentare(DCA)</li>
+              <li>Nelle RSA per anziani</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Profilo professionale di riferimento</h3>
+            <p>Chi è lo Psicomotricista:</p>
+            <ul>
+              <li>Esplica la propria professionalità in forma autonoma in ambito educativo e socio-sanitario;</li>
+              <li>Favorisce lo sviluppo psicofisico della persona e il mantenimento del suo equilibrio in tutto l’arco della vita;</li>
+              <li>Aiuta a superare momenti di crisi anche per prevenire l’instaurarsi di situazioni patologiche;</li>
+              <li>Opera per la valorizzazione e la mobilizzazione della persona e del suo contesto.</li>
+            </ul>
+            <p class="clearfix">
+              <a class="btn btn-large btn-primary" href="#psicomotricista" data-toggle="modal" data-target="#Pagein">
+                Leggi di più
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,186.7C384,192,480,192,576,170.7C672,149,768,107,864,85.3C960,64,1056,64,1152,64C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="approccio" class="Section Section--inbetween Approccio">
+      <header class="container Section__header">
+        <div class="Section__header-titles">
+          <h3 class="Title">
+            Approccio formativo
+          </h3>
+          <p class="Subtitle">
+            La scelta di un approccio formativo originale ed efficace: <span>"L’autoformazione"</span>
+          </p>
+        </div>
+      </header>
+      <div class="container Section__content">
+        <div class="Approccio__intro">
+          <blockquote class="blockquote">
+            <p class="mb-0">
+              “Insegnami il mio, non il tuo linguaggio.<br>
+              Insegnategli il loro, non il vostro linguaggio.<br>
+              Insegnateci il nostro, non il vostro o il loro linguaggio.”
+            </p>
+            <footer class="blockquote-footer"><cite title="Source Title">Brun, 1986</cite></footer>
+          </blockquote>
+          <div class="swiper-container Approccio__carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="static/approccio/danza.jpg" alt="">
+              </div>
+              <!-- <div class="swiper-slide">
+                <img src="static/approccio/gruppo.jpg" alt="">
+              </div> -->
+              <div class="swiper-slide">
+                <img src="static/approccio/guerra-lisi.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="static/approccio/montessori.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="static/approccio/musica.jpg" alt="">
+              </div>
+            </div>
+            <div class="Carousel__arrows">
+                <svg class="icon Carousel__arrows-prev"><use xlink:href="#icon-arrow-left"></use></svg>
+                <svg class="icon Carousel__arrows-next"><use xlink:href="#icon-arrow-right"></use></svg>
+              </div>
+          </div>
+        </div>
+        <p class="Approccio__text">
+          In queste parole di BRUN è sintetizzato il senso e la sfida di questo percorso triennale di formazione.<br>
+          Siamo convinti da sempre che la psicomotricità, così come la formazione, è una vera “avventura di viaggiatori”. Perché il viaggiatore non è chi ama i viaggi restando attaccato alla sua terra; il viaggiatore è un uomo che si risolve nel movimento continuo, nello sforzo ininterrotto di liberarsi da ogni legame interiore ed esteriore, trovando la propria stabilità nella continua trasformazione.<br>
+          Per questo il segreto e il valore della scuola triennale vuole essere, e sarà, in parallelo ai diversi contributi teorici, l’autoformazione individuale e di gruppo.<br>
+          L’autoformazione, infatti, sarà la modalità che permetterà a tutti, e a ciascun allievo/a, di ritrovare la propria fiducia nell’essere costruttore del proprio sapere. E questo ci permetterà di “attraversare il bosco di notte”.<br>
+          “Attraversare il bosco di notte significa andare là dove la paura non ci farebbe andare; significa incontrare aspetti sconosciuti ma anche agognati e radicati dentro di noi”; e l’autoformazione, proprio come “attraversare il bosco di notte”, può significare trovarci d’improvviso di fronte a domande non scontate. Attraversare il bosco di notte, in fondo, dietro l’incontro con la paura, con l’ignoto, non significa altro che “guardarsi dentro”, utilizzare spazi e volti sconosciuti per provare l’ebbrezza e lo stordimento del perdersi nell’ignoto per potersi ritrovare. E poter tornare a casa con nuove consapevolezze di sé.<br>
+          Siamo convinti che la vera formazione non sia “dare forma” ma “emergenza di forma”, vale a dire creare condizioni perché ciascuno possa trovare il filo della sua storia e – fiduciosamente – porlo in connessione con altri fili. Da questo intreccio nessuno potrà mai disegnare in anticipo il tessuto che ne uscirà, nessuno potrà mai prevedere quale nuova storia si scriverà.<br>
+          La vera formazione, infatti, non è accumulare informazioni, acquisire certezze, conquistare competenze per restarne schiavi e prigionieri. In altra direzione di senso, è una formazione che crea condizioni perché ciascuno possa elaborare il suo modo di cercare e utilizzare informazioni, crea condizioni perché ciascuno sappia convivere con l’incertezza e la responsabilità, perché ciascuno sia un po’ più libero.<br>
+          E il cuore dell’autoformazione è quello di osare, di fare nessi anche audaci, inesplorati, di osare dare senso, assumersi la responsabilità di catene di senso. Perché è vero, come dice U.Galimberti, che “ la nostra libertà di scelta non è tra le cose, ma tra i significati che noi diamo alle cose, per cui noi siamo liberi perché siamo donatori di senso e perché scegliamo in base al senso che diamo.”<br>
+          Riteniamo, infatti, che porsi domande, aprire porte, superare barriere che limitano e che impediscono la relazione e la comunicazione vera, saporita, coinvolgente, è l’esercizio quotidiano dello psicomotricista, ma soprattutto il segreto affascinante della formazione vera quella che cambia la vita e il nostro rapporto con la conoscenza.<br>
+          Occorre riappropriarci della fiducia di saper costruire le condizioni per poter continuare ad apprendere. Perché il problema vero non è quanto poco o tanto io ho appreso, posso sempre rimediare. A ben altro livello di significato, il problema è se la formazione è capace di restituirmi la fiducia che io posso autonomamente apprendere, autonomamente cambiare...<br>
+          Autoformazione quindi come “Costruzione” che si può definire ( in senso piagettiano ) organizzazione del mondo tramite la nostra organizzazione. E che valorizza la capacità di rimanere ingenui, di sapersi stupire e meravigliare. E portarsi in tasca tanti sassolini, per non aver paura di perdersi nel bosco. E, in ogni momento, poter tornare a casa, tra luoghi e volti che non c’è bisogno di riconoscere perché dicono di noi e delle nostre nostalgie di futuro.<br>
+          Autoformazione per tenerci strette le mille risorse che non sappiamo di avere, che si perdono nella fretta e nella rigidità delle azioni e dei pensieri. Quelle risorse che germogliano, impreviste, da connessioni mai osate, da desideri non riconoscibili, e da incontri imprevisti e occasionali. Come gli amori selvatici.<br>
+        </p>
+        <p class="text-right text-muted">
+          <em>Nuccio Puleio</em>
+        </p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,74.7C672,96,768,160,864,170.7C960,181,1056,139,1152,101.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="piano-studi" class="Section Section--inbetween Pianostudi">
+      <header class="container Section__header">
+        <div class="Section__header-titles">
+          <h2 class="Title">
+            Il piano degli studi
+          </h2>
+        </div>
+      </header>
+      <div class="Section__content">
+        <div class="container Section__content-text">
+          <h3>Metodologia</h3>
+          <p>In psicomotricità il metodo è contenuto. Il modo di porsi all'altro è, di per sé, materia di relazione, qualità dello scambio comunicativo. I bambini,primi nostri ispiratori, sono insuperabili nell'intercettare, attraverso la lettura " a pelle" dell'atteggiamento dell'adulto, ogni difficoltà, imbarazzo, interesse o disinteresse dell'adulto che ha davanti. Anche le sue paure, spesso malcelate in atteggiamenti di fredda direttività o mielosa accoglienza.</p>
+          <p>La capacità di leggere la congruenza ( e l'incongruenza) tra contenuto e relazione nella comunicazione deve essere alla base della preparazione del professionista, a partire dalla padronanza nel decodificare e modulare le PROPRIE modalità relazionali .</p>
+          <p>Questo vale per la comunicazione educativa e terapeutica, ma anche per la comunicazione "istituzionale" nella complessità dei ruoli, delle funzioni, delle competenze. E questa particolarità determina la valenza "sociale" della formazione.</p>
+          <p>"Saper essere" in una dimensione organizzativa è fondamentale per il successo di ogni azione o intervento educativo,riabilitativo, terapeutico.</p>
+          <p>Per questo l'istituzione formativa deve, alla base, porsi come "modello virtuoso di funzionamento", adottando per scelta e non per convenzione, "stili" comunicativi autentici, efficaci, coerenti e solidali.</p>
+          <p>L'istituzione che forma i professionisti (terapisti, educatori, insegnanti..) non può trascurare o eludere questa caratteristica. L'allievo apprende di più dal "clima formativo" che dalle singole unità didattiche.</p>
+          <p class="text-right text-muted"><em>Roberto Soru</em></p>
+          <h3>Una storia preziosa: l’autoformazione.</h3>
+          <p>E’ una sfida alla linearità semplificatrice. Dove sfidare sta per non affidarsi, non affidarsi ad una pienezza di senso e di significato che nega alla radice l’identità di ciascuno/a allievo/a. Vogliamo praticare la convinzione che il processo di apprendimento è un processo di autoorganizzazione o falsità che regge poco quando si incontra con la vita e l’imprevisto.</p>
+          <p>E non dimentichiamo le parole di Winnicot: “La nostra teoria comprende la convinzione che vivere creativamente sia una situazione di sanità, e che la compiacenza sia una base patologica per la vita”.</p>
+          <p class="text-right text-muted"><em>Nuccio Puleio</em></p>
+        </div>
+        <div class="container Section__content-cards">
+          <h3 class="h1 Section__content-cards-title">Aree della formazione</h3>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <h4>Area della formazione teorica</h4>
+              <p>
+                Il "vero apprendimento" non è il semplice ricordare quanto si è studiato ma, a ben altro livello di significato, la capacità di rielaborare dati, conoscenze, saperi sulla base della propria esperienza, della propria curiosità, dei propri valori, delle proprie nostalgie; in una parola : autoformazione!
+              </p>
+              <div class="text-center">
+                <a class="btn btn-outline-primary" href="#formazione-teorica" data-toggle="modal" data-target="#Pagein">
+                  Leggi di più
                 </a>
-            </p>
-        </div>
-    </div>
-</div>
-
-<!-- Feature 2 -->
-<div class="slide-page" id="feature-2">
-    <div class="row-fluid">
-        <div class="span8">
-            <p>Il "vero apprendimento" non è il semplice ricordare quanto si è studiato ma, a ben altro livello di significato, la capacità di rielaborare dati, conoscenze, saperi sulla base della propria esperienza, della propria curiosità, dei propri valori, delle proprie nostalgie; in una parola : autoformazione!</p>
-            <p>Sapere le "cose" senza averle rielaborate a partire da ciò che è il nostro patrimonio personale è un falso apprendimento. Nel migliore dei casi è solo segno di una buona capacità di memorizzazione Teorie/Conoscenze. A fronte di un inarrestabile processo di complessificazione dei contesti sociali, professionali, degli scambi e delle relazioni interpersonali, il tema della COSTRUZIONE dei saperi supera e travolge la logica della TRASMISSIONE delle conoscenze.</p>
-            <p>Favorire lo sviluppo di sistemi integrati e partecipati di conoscenza/ricerca, particolarmente per la formazione di professioni dove l’intreccio teoria/pratica è all’ordine del giorno , diventa scelta strategica.</p>
-            <p>Programmazione coordinata su visioni condivise dei bisogni, monitorizzazione del processo di apprendimento, promozione di modalità creative e gratificanti di ricerca e studio, possono creare quel METODO di accesso alle conoscenze efficace, innovativo, coerente con la professione in costruzione e costantemente a contatto con la pratica sperimentata nei tirocini.</p>
-            <p>La dimensione gruppale come ambiente di apprendimento deve valere per l’intero sistema formativo: Gruppo docente/Gruppo di Apprendimento – Plenaria.</p>
-            <p>Incentivare la curiosità,promuovere l’autoformazione,stimolare la ricerca, ancorare il sapere all’esperienza e l’esperienza alle teorie, motivare alla formazione continua, possono essere strade praticabili per dare senso alla fatica ineluttabile dell’apprendimento teorico.</p>
-            <p>In termini concreti, si tratta di focalizzarsi sul tema dell’APPRENDIMENTO prima che dell’NSEGNAMENTO</p>
-            <p>Gli apprendimenti teorici ,intesi come “costruzione di saperi” si realizzeranno in 150 ore annuali attraverso:</p>
-            <ul>
-                <li>Contributi qualificati di specialisti della materia, a contatto operativo con la psicomotricità secondo le discipline normate e le aree tematiche di natura “strategica”</li>
-                <li>Contributi magistrali di personalità nazionali dell’ambito Scientifico, Culturale e Sociale</li>
-            </ul>
-            <p>Saranno privilegiate metodologie attive e attività laboratoriali</p>
-        </div>
-        <div class="span4">
-            <h2>AREA DELLA FORMAZIONE <span>TEORICA</span></h2>
-            <p>
-                <a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">
-                    torna indietro
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <h4>Area della formazione pratica-esperenziale</h4>
+              <p>
+              La formazione pratica, distinta tra Formazione d’aula (80 ore) e Tirocinio mirato (150 ore), si contraddistingue per un’attenzione all’individualizzazione dei percorsi tramite una specifica attività di tutoring personalizzato.
+              </p>
+              <div class="text-center">
+                <a class="btn btn-outline-primary" href="#formazione-pratica-esperienziale" data-toggle="modal" data-target="#Pagein">
+                  Leggi di più
                 </a>
-            </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <h4>Area della formazione personale</h4>
+              <p>
+                La cifra distintiva della formazione in psicomotricità si evidenzia nell'attenzione alla FORMAZIONE PERSONALE del futuro professionista, alla costruzione di consapevolezza, alla conoscenza approfondita delle proprie caratteristiche relazionali, alla capacità di gestione del proprio patrimonio emozionale. Senza questa base, sono convinto, ogni abilità tecnica, seppur raffinata, ogni conoscenza teorica, per quanto approfondita, rischiano di disperdersi o svalutarsi, travolte dalla domanda esistenziale del giovane disabile, del bambino in difficoltà, dell'anziano istituzionalizzato.
+              </p>
+              <div class="text-center">
+                <a class="btn btn-outline-primary" href="#formazione-personale" data-toggle="modal" data-target="#Pagein">
+                  Leggi di più
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="span12"><h3>Materie di insegnamento teorico</h3></div>
-        <div class="span5 panel panel-default seth20">
-            <h3>AREA PSICOPEDAGOGICA</h3>
-            <p>Educazione e Prevenzione</p>
-            <ul>
-                <li>Psicologia generale</li>
-                <li>Psicologia dell’età evolutiva</li>
-                <li>Puericultura</li>
-                <li>Antropologia culturale</li>
-                <li>Teorie Psico-Pedagogiche</li>
-                <li>Psicologia dinamica</li>
-                <li>Teorie di Psicanalisi infantile</li>
-                <li>Psicologia di comunità</li>
-                <li>Psicologia dell’anziano</li>
-                <li>Elementi di Analisi Transazionale</li>
-            </ul>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C0C5E1" fill-opacity="1" d="M0,320L60,298.7C120,277,240,235,360,224C480,213,600,235,720,224C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+    <section id="staff" class="Section Staff">
+      <header class="container Section__header">
+        <div class="Section__header-titles">
+          <h2 class="Title">
+            Lo staff della scuola
+          </h2>
         </div>
-        <div class="span5 panel panel-default seth20">
-            <h3>AREA SANITARIA</h3>
-            <p>Nozioni di base</p>
-            <ul>
-                <li>Neuropsichiatria Infantile</li>
-                <li>Neurofisiologia</li>
-                <li>Psichiatria</li>
-                <li>Fisiologia e patologia dello sviluppo 0-6</li>
-                <li>Anatomia</li>
-                <li>Fisiologia e patologia dell’adulto</li>
-                <li>Patologie Psicomotorie</li>
-                <li>Coma e risvegli</li>
-                <li>Dipendenze</li>
-                <li>Disturbi del Comportamento Alimentare</li>
-            </ul>
+      </header>
+      <div class="container Section__content">
+        <div class="card-deck">
+          <a class="card" href="#roberto-soru" data-toggle="modal" data-target="#Pagein">
+            <img class="card-img-top" src="static/staff/roberto-soru.jpg" alt="roberto-soru">
+            <div class="card-body">
+              <div class="card-title">Roberto Soru</div>
+              <p class="card-text">Fondatore, direttore scientifico e responsabile della formazione personale</p>
+            </div>
+          </a>
+          <a class="card" href="#liliana-maffei" data-toggle="modal" data-target="#Pagein">
+            <img class="card-img-top" src="static/staff/liliana-maffei.jpg" alt="liliana-maffei">
+            <div class="card-body">
+              <div class="card-title">Liliana Maffei</div>
+              <p class="card-text">Co-fondatrice e referente della formazione personale</p>
+            </div>
+          </a>
+          <a class="card" href="#marta-schenato" data-toggle="modal" data-target="#Pagein">
+            <img class="card-img-top" src="static/staff/marta-schenato.jpg" alt="marta-schenato">
+            <div class="card-body">
+              <div class="card-title">Marta Schenato</div>
+              <p class="card-text">Monitoraggio e Tutoring</p>
+            </div>
+          </a>
+          <a class="card" href="#melissa-sironi" data-toggle="modal" data-target="#Pagein">
+            <img class="card-img-top" src="static/staff/melissa-sironi.jpg" alt="melissa-sironi">
+            <div class="card-body">
+              <div class="card-title">Melissa Sironi</div>
+              <p class="card-text">Referente amministrativa</p>
+            </div>
+          </a>
         </div>
-        <div class="span5 panel panel-default seth20">
-            <h3>AREA RIABILITATIVA</h3>
-            <p>Comparazioni/integrazioni</p>
-            <ul>
-                <li>Fisiokinesiterapia</li>
-                <li>Logopedia</li>
-                <li>Ortofonia</li>
-                <li>Arteterapia</li>
-                <li>Musicarterapia nella GdL</li>
-                <li>Danzaterapia e Biodanza</li>
-                <li>Psicoterapia/e</li>
-                <li>Gli approcci cognitivo-comportamentali</li>
-            </ul>
+      </div>
+      <div class="container">
+        <h3>
+          I docenti della Scuola
+        </h3>
+        <div class="Staff__docenti">
+          Anselmi Roberta<br>
+          Airoldi Massimo<br>
+          Boldre Oskar<br>
+          Barzaghi Carla<br>
+          Bisioli Bianca<br>
+          Bonicalzi Valentina<br>
+          Casalini Linda<br>
+          Conte Veronica<br>
+          Dori Mauro<br>
+          Engolini Marina<br>
+          Fattore Rosella<br>
+          Formenti Luisa<br>
+          Furini Tania<br>
+          Garcia Victor<br>
+          Guerra Lisi Stefania<br>
+          Maffei Liliana<br>
+          Maggioni Giordana<br>
+          Marino Vincenzo<br>
+          Protasoni Marina<br>
+          Quilici Marco<br>
+          Righetti Renata<br>
+          Schenato Marta<br>
+          Sansoni Costanza<br>
+          Soru Roberto<br>
+          Storaci Eliana<br>
+          G. Nicolodi ha partecipato al convegno “Il Gioco che educa e cura”
         </div>
-        <div class="span5 panel panel-default seth20">
-            <h3>AREA METODOLOGICA</h3>
-            <p>Metodo, tecnica e stile</p>
-            <ul>
-                <li>Metodo del metodo</li>
-                <li>Metodologia del progetto</li>
-                <li>Il metodo dell’osservazione</li>
-                <li>Storia ed evoluzione della Psicomotricità</li>
-                <li>Il setting</li>
-                <li>L’osservazione</li>
-                <li>Il bilancio/profilo/ valutazione psicomotoria</li>
-                <li>Lavoro in gruppo e lavoro d’equipe</li>
-                <li>Il soggetto, il gruppo, l’organizzazione</li>
-                <li> Il gioco</li>
-            </ul>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,176C480,171,600,181,720,160C840,139,960,85,1080,96C1200,107,1320,181,1380,218.7L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+    <footer class="Footer">
+      <div class="Footer__main">
+        <div class="container">
+          <div class="row">
+            <div id="contatti" class="col-12 col-sm-12 col-lg-4 Footer__contacts">
+              <h4 class="Footer__title">Contatti</h4>
+              <a href="https://goo.gl/maps/ZG2zRSq97RD3SreL8" target="_blank" rel="noopener">
+                <svg class="icon"><use xlink:href="#icon-location"></use></svg>
+                via Vergani, 1 - Varese (VA)
+              </a>
+              <a href="tel:3472506558" target="_blank" rel="noopener">
+                <svg class="icon"><use xlink:href="#icon-phone"></use></svg>
+                347 250 65 58
+              </a>
+              <a href="tel:3396178572" target="_blank" rel="noopener">
+                <svg class="icon"><use xlink:href="#icon-phone"></use></svg>
+                339 617 85 72
+              </a>
+              <a href="mailto:scuolapsi2018@gmail.com" target="_blank" rel="noopener">
+                <svg class="icon"><use xlink:href="#icon-email"></use></svg>
+                scuolapsi2018@gmail.com
+              </a>
+              <a href="https://www.facebook.com/centrostudipsicomotricitavarese" target="_blank" rel="noopener">
+                <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
+                Centro Studi di Psicomotricità Relazionale Varese
+              </a>
+              <a href="https://www.facebook.com/scuolapsicomotricitavarese/" target="_blank" rel="noopener">
+                <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
+                Scuola di Psicomotricità Relazionale Varese
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-5 Footer__reviews">
+              <h4 class="Footer__title">Dicono di noi</h4>
+              <blockquote class="blockquote">
+                <p>“...Che tutte le persone che vengono a questa scuola possano sentire l'amore dei suoi creatori”</p>
+                <footer class="blockquote-footer"><cite title="Source Title">Victor Garcìa</cite></footer>
+              </blockquote>
+              <a href="https://www.varesenews.it/2020/02/gioco-educa-cura-universita/901203/" target="_blank" rel="noopener">
+                <blockquote class="blockquote">
+                  <p>“Il gioco che educa e cura in Università”</p>
+                  <footer class="blockquote-footer"><cite title="Source Title">Varese News Bambini</cite></footer>
+                </blockquote>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 Footer__links">
+              <h4 class="Footer__title"> Link amici</h4>
+              <a href="https://www.fiscop.it/" target="_blank" rel="noopener">
+                FISCOP
+              </a>
+              <a href="http://www.centrogdl.org/">
+                Globalità dei linguaggi
+              </a>
+              <a href="https://www.varesenews.it/category/canali-tematici/eventi-bambini/">
+                Varese News Bambini
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="Footer__bottom">
+        <div class="container">
+          <small>
+            &copy; 2020 Centro Studi di Psicomotricità Relazionale di Varese | All rights Reserved
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals: -->
+    <div id="Pagein" class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg	modal-dialog-scrollable Pagein" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            
+ <!-- Modal: psicomotricista -->
+ <div class="Pagein__page" id="psicomotricista">
+  <h4 class="Title">Chi è lo Psicomotricista</p>
+  <h2 class="Subtitle">Profilo professionale di riferimento</h2>
+  <a href="https://www.fiscop.it/profilo-professionale/" target="_blank" rel="noopener">
+    <img src="static/logo-fiscop.jpg" alt=""/>
+  </a>
+  <ul>
+    <li>Esplica la propria professionalità in forma autonoma in ambito educativo e socio-sanitario;</li>
+    <li>Favorisce lo sviluppo psicofisico della persona e il mantenimento del suo equilibrio in tutto l’arco della vita;</li>
+    <li>Aiuta a superare momenti di crisi anche per prevenire l’instaurarsi di situazioni patologiche;</li>
+    <li>Opera per la valorizzazione e la mobilizzazione della persona e del suo contesto.</li>
+  </ul>
+  <h4>Che cosa fa</h4>
+  <p>Lo Psicomotricista postula alla base del proprio intervento l’unità della persona, riconoscendo e favorendo l’interazione e la piena integrazione tra l’area motoria, cognitiva e affettiva.</p>
+  <p>Attiva e favorisce nell’altro la progressiva conoscenza a cominciare dal sé corporeo e dall’ambiente, attraverso la motricità e le capacità simboliche della persona. Svolge attività di osservazione, valutazione e bilancio psicomotorio, anche nell’ambito di un lavoro di équipe. Elabora, anche in équipe multidisciplinare, la definizione del progetto di intervento, volto all’individuazione e al superamento delle difficoltà e dei disagi della persona.</p>
+  <p>Attua i progetti di intervento nei seguenti ambiti:</p>
+  <ul>
+    <li>EDUCATIVO-PREVENTIVO: gli interventi sono rivolti a favorire un armonico sviluppo psicomotorio, a mantenere un adeguato equilibrio e a prevenire disagi della relazione e degli apprendimenti nelle persone in età evolutiva; gli effetti dell’educazione e prevenzione psicomotoria si estendono inoltre a favorire l’integrazione, l’accettazione e la valorizzazione delle differenze personali. Tali interventi possono essere attuati anche in situazioni di rischio sociale e in altre condizioni di difficoltà personali.</li>
+    <li>SOCIALE: lo Psicomotricista svolge la sua attività in ambito sociale per favorire i processi di inserimento e integrazione sociale, per migliorare la comunicazione e l’uso di una adeguata espressività corporea nella relazione umana, coinvolgendo anche gli adulti (genitori, educatori, insegnanti, operatori dell’ambito sociosanitario e assistenziale)  sia a livello personale che nell’acquisizione di strumenti per la propria attività professionale.</li>
+    <li>DI AIUTO: lo Psicomotricista attua interventi di aiuto psicomotorio con persone in età evolutiva e con persone in età adulta o anziani che presentano difficoltà connesse all’alterazione delle funzioni psicomotorie e della comunicazione.</li>
+  </ul>
+  <h4>Come lo fa</h4>
+  <p>L’approccio psicomotorio ha come terreno specifico di intervento il rapporto tra il corpo e i processi psichici nella costruzione dell’identità attraverso la via corporea, nonchè il rapporto tra corpo ed espressività, qualunque sia il livello di capacità motorie della persona.</p>
+  <p>Utilizzando la conoscenza di questi rapporti e la capacità peculiare di lettura della comunicazione non verbale (movimento, tono, postura, gesto, sguardo, uso degli oggetti, dello spazio, ecc.) lo Psicomotricista interviene nella ralazione con metodologie psicomotorie (attività percettive, cognitive, ludico espressive, rilassamento, comunicazione non verbale, ecc.) con l’obiettivo di favorire in primo luogo il processo di integrazione fra i diversi piani espressivi e conoscitivi che stanno alla base di quel fenomeno complesso che è la costruzione dell’identità.</p>
+  <p>Questo obiettivo si realizza non in un percorso di insegnamento-apprendimento di abilità, quanto in contesti comunicativi, dove la rete di scambi rende possibile il riconoscimento dell’altro, lo stimolo e il riconoscimento delle sue risorse.</p>
+  <p>Lo Psicomotricista ha fondamenti epistemiologici, obiettivi e modalità operative peculiari che lo contraddistinguono come figura professionale specifica.</p>
+  <h4>Come si forma</h4>
+  <p>Per svolgere adeguatamente queste funzioni lo Psicomotricista necessita di:</p>
+  <ul>
+    <li>Una formazione teorica ampia, centrata su una visione globale della persona, con particolare allo sviluppo psicomotorio del bambino, nel superamento della scissione mente-corpo  e nel riconoscimento dell’individuo come espressione del suo gruppo di appartenenza;</li>
+    <li>Una formazione personale approfondita, quale percorso di esperienza la cui finalità è l’acquisizione delle capacità di ascolto: dalla percezione delle modificazioni somatiche relative al proprio coinvolgimento emozionale nella relazione con l’altro, alla capacità di decentrarsi verso l’altro, attraverso l’adattamento tonico-emozionale, per giungere alla lettura e alla comprensione del senso della sua espressività motoria.</li>
+    <li>Una formazione professionale specifica, che vede al centro del lavoro l’intervento con la persona nella sua globalità e si realizza attraverso il tirocinio, momenti di elaborazione delle esperienze, supervisioni degli interventi effettuati, seminari sui temi della psicomotricità (atteggiamento dello psicomotricista, l’attività psicomotoria, l’osservazione della persona, modalità e parametri dell’osservazione psicomotoria).</li>
+  </ul>
+  <p>Dal 1972 la formazione degli psicomotricisti si realizza presso scuole di Psicomotricità presenti sul territorio nazionale.</p>
+  <p>Attualmente la formazione si effettua con corsi triennali di almeno 2400 ore, ripartite in tre aree di formazione (Formazione Personale, Teorica e Pratica) secondo quanto concordato a livello nazionale ed europeo.</p>
 </div>
 
-<!-- Feature 3 -->
-<div class="slide-page" id="feature-3">
-    <div class="row-fluid">
-        <div class="span8">
-            <h3>Meno cattedra e più bottega</h3>
-            <p>La formazione pratica, distinta tra Formazione d’aula (80 ore) e Tirocinio mirato (150 ore), si contraddistingue per un’attenzione all’individualizzazione dei percorsi tramite una specifica attività di tutoring personalizzato.</p>
-            <p>La formazione d’aula prevede sessioni intensive di lavoro in gruppo orientate a:</p>
-            <ul>
-                <li>Favorire l’apprendimento dall’esperienza con ogni tecnica idonea (simulazioni, role playing, case-history) su tematiche specifiche (osservazione, gioco, dinamiche gruppali,gestione di riunioni/colloqui , scrittura professionale etc.)</li>
-                <li>Esaltare la soggettività dell’apprendimento, stimolando l’iniziativa individuale alla ricerca.</li>
-                <li>Fornire strumenti di trasferibilità dell’esperienza nei diversi contesti operativi</li>
-                <li>Rielaborare in termini professionalmente spendibili l’esperienza maturata nel corso della formazione personale, anche attraverso riflessioni guidate dal tutor individuale.</li>
-                <li>Rielaborare l’esperienza del tirocinio in termini di apprendimento attivo, sia sul piano della crescita personale che dello sviluppo professionale.</li>
-            </ul>
-            <p>Il tirocinio mirato sarà concordato con l’allievo e si avvarrà della scelta di servizi e strutture selezionati dalla Scuola ed altamente qualificati.</p>
-            <p>In particolare si potrà contare su una consolidata rete di servizi educativi , socio educativi e riabilitativi nel territorio delle provincie di Verbania, Varese, Novara,Alessandria, Aosta, oltre che di convenzioni con servizi e strutture preventivamente selezionate, operanti nei territori di provenienza.</p>
-            <p>La formazione pratica si avvarrà della supervisione di Nuccio Puleio e delle professionalità di Michela Caponigro (Coordinatrice e referente dell’area) Liliana Maffei (Tutoring individualizzato) e Marta Schenato (Tutoring individualizzato)</p>
-        </div>
-        <div class="span4">
-            <h2>AREA DELLA FORMAZIONE <span>PRATICA-ESPERENZIALE</span></h2>
-            <p><img src="images/gruppo2.jpg" alt=""/></p>
-            <p>
-                <a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">torna indietro</a>
-            </p>
-        </div>
-    </div>
+<!-- Modal: formazione teorica -->
+<div class="Pagein__page" id="formazione-teorica">
+  <h2 class="Title">Area della formazione teorica</h2>
+  <img src="static/pianostudi/marino.jpg" alt=""/>
+  <p>Il "vero apprendimento" non è il semplice ricordare quanto si è studiato ma, a ben altro livello di significato, la capacità di rielaborare dati, conoscenze, saperi sulla base della propria esperienza, della propria curiosità, dei propri valori, delle proprie nostalgie; in una parola : autoformazione!</p>
+  <p>Sapere le "cose" senza averle rielaborate a partire da ciò che è il nostro patrimonio personale è un falso apprendimento. Nel migliore dei casi è solo segno di una buona capacità di memorizzazione Teorie/Conoscenze. A fronte di un inarrestabile processo di complessificazione dei contesti sociali, professionali, degli scambi e delle relazioni interpersonali, il tema della COSTRUZIONE dei saperi supera e travolge la logica della TRASMISSIONE delle conoscenze.</p>
+  <p>Favorire lo sviluppo di sistemi integrati e partecipati di conoscenza/ricerca, particolarmente per la formazione di professioni dove l’intreccio teoria/pratica è all’ordine del giorno , diventa scelta strategica.</p>
+  <p>Programmazione coordinata su visioni condivise dei bisogni, monitorizzazione del processo di apprendimento, promozione di modalità creative e gratificanti di ricerca e studio, possono creare quel METODO di accesso alle conoscenze efficace, innovativo, coerente con la professione in costruzione e costantemente a contatto con la pratica sperimentata nei tirocini.</p>
+  <p>La dimensione gruppale come ambiente di apprendimento deve valere per l’intero sistema formativo: Gruppo docente/Gruppo di Apprendimento – Plenaria.</p>
+  <p>Incentivare la curiosità,promuovere l’autoformazione,stimolare la ricerca, ancorare il sapere all’esperienza e l’esperienza alle teorie, motivare alla formazione continua, possono essere strade praticabili per dare senso alla fatica ineluttabile dell’apprendimento teorico.</p>
+  <p>In termini concreti, si tratta di focalizzarsi sul tema dell’APPRENDIMENTO prima che dell’NSEGNAMENTO</p>
+  <p>Gli apprendimenti teorici ,intesi come “costruzione di saperi” si realizzeranno in 150 ore annuali attraverso:</p>
+  <ul>
+    <li>Contributi qualificati di specialisti della materia, a contatto operativo con la psicomotricità secondo le discipline normate e le aree tematiche di natura “strategica”</li>
+    <li>Contributi magistrali di personalità nazionali dell’ambito Scientifico, Culturale e Sociale</li>
+  </ul>
+  <p>Saranno privilegiate metodologie attive e attività laboratoriali</p>
+  <hr>
+  <h3>Materie di insegnamento teorico</h3>
+  <div class="">
+    <h5>AREA PSICOPEDAGOGICA</h5>
+    <p>Educazione e Prevenzione</p>
+    <ul>
+      <li>Psicologia generale</li>
+      <li>Psicologia dell’età evolutiva</li>
+      <li>Puericultura</li>
+      <li>Antropologia culturale</li>
+      <li>Teorie Psico-Pedagogiche</li>
+      <li>Psicologia dinamica</li>
+      <li>Teorie di Psicanalisi infantile</li>
+      <li>Psicologia di comunità</li>
+      <li>Psicologia dell’anziano</li>
+      <li>Elementi di Analisi Transazionale</li>
+    </ul>
+  </div>
+  <div class="">
+    <h5>AREA SANITARIA</h5>
+    <p>Nozioni di base</p>
+    <ul>
+      <li>Neuropsichiatria Infantile</li>
+      <li>Neurofisiologia</li>
+      <li>Psichiatria</li>
+      <li>Fisiologia e patologia dello sviluppo 0-6</li>
+      <li>Anatomia</li>
+      <li>Fisiologia e patologia dell’adulto</li>
+      <li>Patologie Psicomotorie</li>
+      <li>Coma e risvegli</li>
+      <li>Dipendenze</li>
+      <li>Disturbi del Comportamento Alimentare</li>
+    </ul>
+  </div>
+  <div class="">
+    <h5>AREA RIABILITATIVA</h5>
+    <p>Comparazioni/integrazioni</p>
+    <ul>
+      <li>Fisiokinesiterapia</li>
+      <li>Logopedia</li>
+      <li>Ortofonia</li>
+      <li>Arteterapia</li>
+      <li>Musicarterapia nella GdL</li>
+      <li>Danzaterapia e Biodanza</li>
+      <li>Psicoterapia/e</li>
+      <li>Gli approcci cognitivo-comportamentali</li>
+    </ul>
+  </div>
+  <div class="">
+    <h5>AREA METODOLOGICA</h5>
+    <p>Metodo, tecnica e stile</p>
+    <ul>
+      <li>Metodo del metodo</li>
+      <li>Metodologia del progetto</li>
+      <li>Il metodo dell’osservazione</li>
+      <li>Storia ed evoluzione della Psicomotricità</li>
+      <li>Il setting</li>
+      <li>L’osservazione</li>
+      <li>Il bilancio/profilo/ valutazione psicomotoria</li>
+      <li>Lavoro in gruppo e lavoro d’equipe</li>
+      <li>Il soggetto, il gruppo, l’organizzazione</li>
+      <li> Il gioco</li>
+    </ul>
+  </div>
 </div>
 
-<!-- Feature 4 -->
-<div class="slide-page" id="feature-4">
-    <div class="row-fluid">
-        <div class="span8">
-            <p>La cifra distintiva della formazione in psicomotricità si evidenzia nell'attenzione alla FORMAZIONE PERSONALE del futuro professionista, alla costruzione di consapevolezza, alla conoscenza approfondita delle proprie caratteristiche relazionali, alla capacità di gestione del proprio patrimonio emozionale. Senza questa base, sono convinto, ogni abilità tecnica, seppur raffinata, ogni conoscenza teorica, per quanto approfondita, rischiano di disperdersi o svalutarsi, travolte dalla domanda esistenziale del giovane disabile, del bambino in difficoltà, dell'anziano istituzionalizzato.</p>
-            <p>Questo è un problema storico delle istituzioni formative, che dovrebbe, teoricamente, essere superato. Ma non è così: di fronte alla fatica di porsi domande, anche come organizzazioni, si preferisce "rimuovere" e "compensare" con offerte di saperi e tecniche più o meno specialistici(a volte) e aggiornati (quasi mai). Con grande sperpero di risorse e di talenti.</p>
-            <p>La formazione personale ha una metodologia elettiva: il gioco tra adulti,in gruppo.</p>
-            <p>Nel gioco, l’azione è narrazione. Saper giocare è già cura di sé.</p>
-            <p>Lo Psicomotricista, come ogni professionista implicato nella relazione di aiuto, in qualsiasi contesto si trovi ad operare è coinvolto in dinamiche relazionali complesse che possono indurre strategie difensive più o meno consapevoli.</p>
-            <p>Proiezione, identificazione, idealizzazione, negazione, solo per esempio, non appartengono unicamente al “materiale” introdotto nella comunicazione dall’interlocutore (chiameremo così, in una dinamica comunicativa a due vie, chi viene definito ora paziente, utente, cliente…) ma sono anche produzioni del conduttore stesso, che deve saper riconoscere, accettare (e/o modificare) e governare.</p>
-            <p>Si pensi solo all’impatto dell’operatore con situazioni di disabilità psicofisiche gravi, patologie psichiatriche, geriatriche o più quotidianamente, con bambini con gravi disturbi della comunicazione.</p>
-            <p>L’esperienza sul campo evidenzia come una buona preparazione teorico-tecnica non sia sufficiente ad attivare quella comunicazione empatica, quella particolare presenza in ascolto attivo, che sono la base di un intervento educativo efficace.</p>
-            <p>In Psicomotricità, in particolare, la comunicazione corporea amplifica la portata di questi fenomeni ed è fondamentale che l’operatore abbia una formazione approfondita su di sé, sulle proprie strategie comunicative e relazionali.</p>
-            <p>Occorre dunque che la FORMAZIONE PERSONALE consenta di confrontarsi con la PRATICA dell’EMPATIA CORPOREA, del DIALOGO TONICO, dell’ATTIVITÀ LUDICO-SIMBOLICA tra adulti.</p>
-            <p>Corpo-Gioco-Relazione, che sono i cardini dell’intervento psicomotorio, comportano il possesso di COMPETENZE personali approfondite, da acquisire con un percorso formativo sufficientemente lungo, intenso ed adeguatamente guidato.</p>
-            <p>La proposta formativa della Scuola prevede 200 ore di formazione personale distribuite in Seminari pratici intensivi da svolgersi in 6 fine settimana più un seminario residenziale di 4 giorni.</p>
-            <p>Il responsabile della formazione personale e della conduzione dei seminari intensivi di vissuto corporeo è Roberto Soru.</p>
-        </div>
-        <div class="span4">
-            <h2>AREA DELLA FORMAZIONE <span>PERSONALE</span></h2>
-            <p><img src="images/gruppo3.jpg" alt=""/></p>
-            <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">torna indietro</a></p>
-        </div>
-    </div>
+<!-- Modal: formazione-pratica-esperienziale -->
+<div class="Pagein__page" id="formazione-pratica-esperienziale">
+  <h2 class="Title">Area della formazione pratica-esperenziale</h2>
+  <h3 class="Subtitle">Meno cattedra e più bottega</h3>
+  <img src="static/pianostudi/musicoterapia.jpg" alt=""/>
+  <p>La formazione pratica, distinta tra Formazione d’aula (80 ore) e Tirocinio mirato (150 ore), si contraddistingue per un’attenzione all’individualizzazione dei percorsi tramite una specifica attività di tutoring personalizzato.</p>
+  <p>La formazione d’aula prevede sessioni intensive di lavoro in gruppo orientate a:</p>
+  <ul>
+    <li>Favorire l’apprendimento dall’esperienza con ogni tecnica idonea (simulazioni, role playing, case-history) su tematiche specifiche (osservazione, gioco, dinamiche gruppali,gestione di riunioni/colloqui , scrittura professionale etc.)</li>
+    <li>Esaltare la soggettività dell’apprendimento, stimolando l’iniziativa individuale alla ricerca.</li>
+    <li>Fornire strumenti di trasferibilità dell’esperienza nei diversi contesti operativi</li>
+    <li>Rielaborare in termini professionalmente spendibili l’esperienza maturata nel corso della formazione personale, anche attraverso riflessioni guidate dal tutor individuale.</li>
+    <li>Rielaborare l’esperienza del tirocinio in termini di apprendimento attivo, sia sul piano della crescita personale che dello sviluppo professionale.</li>
+  </ul>
+  <p>Il tirocinio mirato sarà concordato con l’allievo e si avvarrà della scelta di servizi e strutture selezionati dalla Scuola ed altamente qualificati.</p>
+  <p>In particolare si potrà contare su una consolidata rete di servizi educativi , socio educativi e riabilitativi nel territorio delle provincie di Verbania, Varese, Novara,Alessandria, Aosta, oltre che di convenzioni con servizi e strutture preventivamente selezionate, operanti nei territori di provenienza.</p>
+  <p>La formazione pratica si avvarrà della supervisione di Nuccio Puleio e delle professionalità di Michela Caponigro (Coordinatrice e referente dell’area) Liliana Maffei (Tutoring individualizzato) e Marta Schenato (Tutoring individualizzato)</p>
 </div>
 
-<!-- Staff: Roberto 1 -->
-<div class="slide-page" id="soru">
-    <div class="row-fluid">
-        <div class="span6">
-            <h2>Roberto Soru</h2>
-            <h3>Fondatore, direttore scientifico e responsabile della formazione personale</h3>
-            <p>Psicomotricista Relazionale, Formatore, Supervisore</p>
-            <p>Formato con André, Anne Lapierre e Victor Garcia</p>
-            <h4>Attualmente:</h4>
-            <p>Docente Senior in Formazione personale psicomotoria</p>
-            <p>Direttore della Scuola di formazione triennale in psicomotricità di Varese</p>
-            <p>Direttore del Corso annuale di Perfezionamento post Diploma in Psicomotricità</p>
-            <p>Consulente per la Psicomotricità presso la Casa della Salute della Mente di Brusson (AO)</p>
-            <p>Già presidente dell’Associazione Italiana Psicomotricità Relazionale (AIPR)-Alessandria</p>
-            <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">torna indietro</a></p>
-        </div>
-        <div class="span6">
-            <img class="thumbnail" src="images/FOTO/soru.jpg" alt=""/>
-        </div>
-    </div>
+<!-- Modal: formazione-personale -->
+<div class="Pagein__page" id="formazione-personale">
+  <h2 class="Title">Area della formazione personale</h2>
+  <img src="static/pianostudi/palestra.jpg" alt=""/>
+  <p>La cifra distintiva della formazione in psicomotricità si evidenzia nell'attenzione alla FORMAZIONE PERSONALE del futuro professionista, alla costruzione di consapevolezza, alla conoscenza approfondita delle proprie caratteristiche relazionali, alla capacità di gestione del proprio patrimonio emozionale. Senza questa base, sono convinto, ogni abilità tecnica, seppur raffinata, ogni conoscenza teorica, per quanto approfondita, rischiano di disperdersi o svalutarsi, travolte dalla domanda esistenziale del giovane disabile, del bambino in difficoltà, dell'anziano istituzionalizzato.</p>
+  <p>Questo è un problema storico delle istituzioni formative, che dovrebbe, teoricamente, essere superato. Ma non è così: di fronte alla fatica di porsi domande, anche come organizzazioni, si preferisce "rimuovere" e "compensare" con offerte di saperi e tecniche più o meno specialistici(a volte) e aggiornati (quasi mai). Con grande sperpero di risorse e di talenti.</p>
+  <p>La formazione personale ha una metodologia elettiva: il gioco tra adulti,in gruppo.</p>
+  <p>Nel gioco, l’azione è narrazione. Saper giocare è già cura di sé.</p>
+  <p>Lo Psicomotricista, come ogni professionista implicato nella relazione di aiuto, in qualsiasi contesto si trovi ad operare è coinvolto in dinamiche relazionali complesse che possono indurre strategie difensive più o meno consapevoli.</p>
+  <p>Proiezione, identificazione, idealizzazione, negazione, solo per esempio, non appartengono unicamente al “materiale” introdotto nella comunicazione dall’interlocutore (chiameremo così, in una dinamica comunicativa a due vie, chi viene definito ora paziente, utente, cliente…) ma sono anche produzioni del conduttore stesso, che deve saper riconoscere, accettare (e/o modificare) e governare.</p>
+  <p>Si pensi solo all’impatto dell’operatore con situazioni di disabilità psicofisiche gravi, patologie psichiatriche, geriatriche o più quotidianamente, con bambini con gravi disturbi della comunicazione.</p>
+  <p>L’esperienza sul campo evidenzia come una buona preparazione teorico-tecnica non sia sufficiente ad attivare quella comunicazione empatica, quella particolare presenza in ascolto attivo, che sono la base di un intervento educativo efficace.</p>
+  <p>In Psicomotricità, in particolare, la comunicazione corporea amplifica la portata di questi fenomeni ed è fondamentale che l’operatore abbia una formazione approfondita su di sé, sulle proprie strategie comunicative e relazionali.</p>
+  <p>Occorre dunque che la FORMAZIONE PERSONALE consenta di confrontarsi con la PRATICA dell’EMPATIA CORPOREA, del DIALOGO TONICO, dell’ATTIVITÀ LUDICO-SIMBOLICA tra adulti.</p>
+  <p>Corpo-Gioco-Relazione, che sono i cardini dell’intervento psicomotorio, comportano il possesso di COMPETENZE personali approfondite, da acquisire con un percorso formativo sufficientemente lungo, intenso ed adeguatamente guidato.</p>
+  <p>La proposta formativa della Scuola prevede 200 ore di formazione personale distribuite in Seminari pratici intensivi da svolgersi in 6 fine settimana più un seminario residenziale di 4 giorni.</p>
+  <p>Il responsabile della formazione personale e della conduzione dei seminari intensivi di vissuto corporeo è Roberto Soru.</p>
 </div>
 
-<!-- Staff: Liliana -->
-<div class="slide-page" id="maffei">
-    <div class="row-fluid">
-        <div class="span6">
-            <h2>Liliana Maffei</h2>
-            <h3>Co-fondatrice e referente della formazione personale</h3>
-            <h3>Formazione personale</h3>
-            <p>Psicomotricista, educatrice, attrice teatrale.</p>
-            <p>In psicomotricità si specializza nelle aree minori, adulti, disabilità e psichiatria, e svolge attività libero professionale presso il Centro Studi di Psicomotricità Relazionale.</p>
-            <p>Come educatrice opera nelle attività scolastiche extra curriculari con minori e disabili.</p>
-            <p>Fondatrice dell’Associazione Culturale Piccola Compagnia Instabile di Varese, si occupa di recitazione, formazione e regia con bambini, adolescenti e adulti.</p>
-            <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">torna indietro</a></p>
-        </div>
-        <div class="span6">
-            <img class="thumbnail" src="images/FOTO/maffei.jpg" alt=""/>
-        </div>
-    </div>
+<!-- Modal: roberto-soru -->
+<div class="Pagein__page" id="roberto-soru">
+  <h2 class="Title">Roberto Soru</h2>
+  <h3 class="Subtitle">Fondatore, direttore scientifico e responsabile della formazione personale</h3>
+  <img class="thumbnail" src="static/staff/roberto-soru.jpg" alt="roberto-soru">
+  <p>Psicomotricista Relazionale, Formatore, Supervisore</p>
+  <p>Formato con André, Anne Lapierre e Victor Garcia</p>
+  <p>Fondatore e Direttore scientifico della Scuola di Formazione in Psicomotricità Relazionale di Varese</p>
+  <p>Docente Senior in Formazione personale psicomotoria</p>
+  <p>Direttore del Corso annuale di Perfezionamento post Diploma in Psicomotricità</p>
+  <p>Supervisore e formatore didatta</p>
 </div>
 
-<!-- Staff: Marta Schenato -->
-<div class="slide-page" id="schenato">
-    <div class="row-fluid">
-        <div class="span6">
-            <h2>Marta Schenato</h2>
-            <h3>Monitoraggio e Tutoring</h3>
-            <p>Psicomotricista relazionale</p>
-            <p>Educatrice professionale</p>
-            <p>Formata con Roberto Soru e specializzata in conduzione di gruppo di adulti</p>
-            <p>attualmente:</p>
-            <ul>
-                <li>educatrice presso comunità psichiatrica</li>
-                <li>psicomotricista presso comunità psichiatrica</li>
-                <li>psicomotricista presso la Casa della Salute della Mente di Brusson (disturbi del comportamento alimentare, dipendenza e psichiatria)</li>
-            </ul>
-            <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">torna indietro</a></p>
-        </div>
-        <div class="span6">
-            <img class="thumbnail" src="images/FOTO/schenato.jpg" alt=""/>
-        </div>
-    </div>
+<!-- Modal: liliana-maffei -->
+<div class="Pagein__page" id="liliana-maffei">
+  <h2 class="Title">Liliana Maffei</h2>
+  <h3 class="Subtitle">Co-fondatrice e referente della formazione personale</h3>
+  <img class="thumbnail" src="static/staff/liliana-maffei.jpg" alt="liliana-maffei">
+  <p>Psicomotricista Relazionale, educatrice professionale e attrice teatrale.</p>
+  <p>Si diploma come Psicomotricista ottenendo una votazione di 110 con lode.</p>
+  <p>Si specializza attraverso Corsi annuali di Perfezionamento nelle aree minori, adulti, disabilità.</p>
+  <p>Svolge attività libero professionale presso il proprio “Centro Studi di Psicomotricità Relazionale” (Varese), dove opera prevalentemente con la fascia dell’età evolutiva, e promuove progetti nei Nidi, nelle Scuole dell’Infanzia e nelle Scuole Primarie.</p>
+  <p>Collabora con la FISM (Federazione Italiana Scuole Materne) in qualità di docente formatore.</p>
+  <p>E’ co-fondatrice della Scuola di Formazione Triennale in Psicomotricità Relazionale di Varese, dove dall’ottobre 2016 è inserita nel direttivo e lavora come docente formatore.</p>
+  <p>Come educatrice opera nelle attività scolastiche extra curriculari con minori e disabili.</p>
+  <p>Nel Teatro si occupa di recitazione e regia, oltre che all’insegnamento a bambini, adolescenti, adulti e disabili. È membro fondatore della “Piccola Compagnia Instabile.</p>
+  <p>È docente di recitazione presso il Civico Liceo Musicale di Varese</p>
+</div>                                                  
+
+<!-- Modal: marta-schenato -->
+<div class="Pagein__page" id="marta-schenato">
+  <h2 class="Title">Marta Schenato</h2>
+  <h3 class="Subtitle">Monitoraggio e Tutoring</h3>
+  <img class="thumbnail" src="static/staff/marta-schenato.jpg" alt="marta-schenato">
+  <p>Psicomotricista relazionale</p>
+  <p>Educatrice professionale</p>
+  <p>Formata con Roberto Soru e specializzata in conduzione di gruppo di adulti</p>
+  <p>attualmente Coordinatrice  presso comunità psichiatrica</p>
 </div>
 
-<!-- Staff: Melissa -->
-<div class="slide-page" id="melissa">
-    <div class="row-fluid">
-        <div class="span6">
-            <h2>Melissa Sironi</h2>
-            <h3>...</h3>
-            <p><a class="btn btn-primary btn-large" href="javascript:$.pageslide.close()">torna indietro</a></p>
-        </div>
-        <div class="span6">
-            <img class="thumbnail" src="images/FOTO/schenato.jpg" alt=""/>
-        </div>
-    </div>
+<!-- Modal: melissa-sironi -->
+<div class="Pagein__page" id="melissa-sironi">
+  <h2 class="Title">Melissa Sironi</h2>
+  <h3 class="Subtitle">Referente amministrativa</h3>
+  <img class="thumbnail" src="static/staff/melissa-sironi.jpg" alt="melissa-sironi">
+  <p>Psicomotricista, insegnante.</p>
+  <p>Formata nella Scuola di formazione in psicomotricità relazionale di Varese.</p>
+  <p>Psicomotricista in attività libero professionale presso il centro <a href="https://www.arcobalenodiprofilo.it/" target="_blank" rel="noopener">Arcobaleno di profilo di Varese</a>.</p>
+  <p>Psicomotricista presso le scuole dell’infanzia e primarie dell’IC De Amicis di Gallarate (Va).</p>
+  <p>Insegnante di scuola primaria con interesse per le discipline scientifiche e responsabile di plesso.</p>
 </div>
 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- Load Plugins -->
-<script src="assets/jquery/jquery.min.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
-<script src="assets/js/modernizr.custom.js"></script>
-<script src="assets/js/jquery.stellar.min.js"></script>
-<script src="assets/js/iscroll.js"></script>
-<script src="assets/js/jquery.pageslide.min.js"></script>
-<!-- Load Custom Script -->
-<script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
 
-<!-- Analytics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="paper-balls" src="/js/paper-balls.js"></script>
+    
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-41610926-4', 'auto');
-        ga('send', 'pageview');
-
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-41610926-4', 'auto');
+      ga('send', 'pageview');
     </script>
-
-</div>
-</div>
-</body>
+  </body>
 </html>
