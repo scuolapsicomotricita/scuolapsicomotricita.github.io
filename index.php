@@ -59,7 +59,7 @@
       <div class="container">
         <a class="navbar-brand" href="/" data-smooth>
           <img
-            src="static/logo-header-128.png"
+            src="static/logo-header.png"
             alt="logo-scuola-psicomotricita"
             height="128"
           />
@@ -193,27 +193,27 @@
         <div class="swiper-container Eventi__carousel">
           <div class="swiper-wrapper row">
             <div class="swiper-slide col-12 col-lg-4">
-              <a class="Eventi__link" href="/static/eventi/locandina-convegno-psicomotricita.jpg" target="_blank" rel="noopener">
+              <a class="Eventi__link" href="/static/eventi/locandina-convegno-psicomotricita--full.jpg" target="_blank" rel="noopener">
                 <img class="thumbnail" src="static/eventi/locandina-convegno-psicomotricita.jpg" alt="convegno-psicomotricita" />
               </a>
             </div>
             <div class="swiper-slide col-12 col-lg-4">
-              <a class="Eventi__link" href="/static/eventi/locandina-musicoterapia-canticorpi.jpg" target="_blank" rel="noopener">
+              <a class="Eventi__link" href="/static/eventi/locandina-musicoterapia-canticorpi--full.jpg" target="_blank" rel="noopener">
                 <img class="thumbnail" src="static/eventi/locandina-musicoterapia-canticorpi.jpg" alt="musicoterapia-canticorpi" />
               </a>
             </div>
             <div class="swiper-slide col-12 col-lg-4">
-              <a class="Eventi__link" href="/static/eventi/locandina-seminario-intensivo.jpg" target="_blank" rel="noopener">
+              <a class="Eventi__link" href="/static/eventi/locandina-seminario-intensivo--full.jpg" target="_blank" rel="noopener">
                 <img class="thumbnail" src="static/eventi/locandina-seminario-intensivo.jpg" alt="seminario-intensivo" />
               </a>
               </div>
             <div class="swiper-slide col-12 col-lg-4">
-              <a class="Eventi__link" href="/static/eventi/locandina-seminario-victor-garcia.jpg" target="_blank" rel="noopener">
+              <a class="Eventi__link" href="/static/eventi/locandina-seminario-victor-garcia--full.jpg" target="_blank" rel="noopener">
                 <img class="thumbnail" src="static/eventi/locandina-seminario-victor-garcia.jpg" alt="seminario-victor-garcia" />
               </a>
             </div>
             <div class="swiper-slide col-12 col-lg-4">
-              <a class="Eventi__link" href="/static/eventi/locandina-percorsi-di-psicomotricita-per-bambini.jpg" target="_blank" rel="noopener">
+              <a class="Eventi__link" href="/static/eventi/locandina-percorsi-di-psicomotricita-per-bambini--full.jpg" target="_blank" rel="noopener">
                 <img class="thumbnail" src="static/eventi/locandina-percorsi-di-psicomotricita-per-bambini.jpg" alt="percorsi-di-psicomotricita-per-bambini" />
               </a>
             </div>
@@ -240,7 +240,7 @@
       <div class="container Section__content">
         <div class="row">
           <div class="col-12 col-lg-4">
-            <img class="Centro__img" src="static/centro/formazione-adolescenti.jpg">
+            <img class="Centro__img" src="static/centro/formazione-adolescenti-liliana-maffei.jpg">
             <h4 class="Centro__title">
               Psicomotricità Relazionale con i bambini
             </h4>
@@ -566,6 +566,7 @@
           Formenti Luisa<br>
           Furini Tania<br>
           Garcia Victor<br>
+          Giuseppe Nicolodi<br>
           Guerra Lisi Stefania<br>
           Maffei Liliana<br>
           Maggioni Giordana<br>
@@ -577,7 +578,6 @@
           Sansoni Costanza<br>
           Soru Roberto<br>
           Storaci Eliana<br>
-          G. Nicolodi ha partecipato al convegno “Il Gioco che educa e cura”
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,176C480,171,600,181,720,160C840,139,960,85,1080,96C1200,107,1320,181,1380,218.7L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
@@ -793,7 +793,7 @@
   </ul>
   <p>Il tirocinio mirato sarà concordato con l’allievo e si avvarrà della scelta di servizi e strutture selezionati dalla Scuola ed altamente qualificati.</p>
   <p>In particolare si potrà contare su una consolidata rete di servizi educativi , socio educativi e riabilitativi nel territorio delle provincie di Verbania, Varese, Novara,Alessandria, Aosta, oltre che di convenzioni con servizi e strutture preventivamente selezionate, operanti nei territori di provenienza.</p>
-  <p>La formazione pratica si avvarrà della supervisione di Nuccio Puleio e delle professionalità di Michela Caponigro (Coordinatrice e referente dell’area) Liliana Maffei (Tutoring individualizzato) e Marta Schenato (Tutoring individualizzato)</p>
+  <p>La formazione pratica si avvarrà della professionalità di Marta Schenato, con compiti di coordinamento e tutoring individuale.</p>
 </div>
 
 <!-- Modal: formazione-personale -->
@@ -811,8 +811,7 @@
   <p>In Psicomotricità, in particolare, la comunicazione corporea amplifica la portata di questi fenomeni ed è fondamentale che l’operatore abbia una formazione approfondita su di sé, sulle proprie strategie comunicative e relazionali.</p>
   <p>Occorre dunque che la FORMAZIONE PERSONALE consenta di confrontarsi con la PRATICA dell’EMPATIA CORPOREA, del DIALOGO TONICO, dell’ATTIVITÀ LUDICO-SIMBOLICA tra adulti.</p>
   <p>Corpo-Gioco-Relazione, che sono i cardini dell’intervento psicomotorio, comportano il possesso di COMPETENZE personali approfondite, da acquisire con un percorso formativo sufficientemente lungo, intenso ed adeguatamente guidato.</p>
-  <p>La proposta formativa della Scuola prevede 200 ore di formazione personale distribuite in Seminari pratici intensivi da svolgersi in 6 fine settimana più un seminario residenziale di 4 giorni.</p>
-  <p>Il responsabile della formazione personale e della conduzione dei seminari intensivi di vissuto corporeo è Roberto Soru.</p>
+  <p>L'impianto della formazione personale prevede la conduzione di entrambe le figure maschile e femminile, in coppia o singolarmente. Prevende inoltre un seminario residenziale ogni anno. Roberto Soru, Responsabile della formazione personale, è affiancato, come referente femminile, da Liliana Maffei.</p>
 </div>
 
 <!-- Modal: roberto-soru -->
