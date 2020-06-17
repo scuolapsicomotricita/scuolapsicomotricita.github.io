@@ -193,6 +193,16 @@
         <div class="swiper-container Eventi__carousel">
           <div class="swiper-wrapper row">
             <div class="swiper-slide col-12 col-lg-4">
+              <a class="Eventi__link" href="/static/eventi/locandina-open-day-2020.jpeg" target="_blank" rel="noopener">
+                <img class="thumbnail" src="static/eventi/locandina-open-day-2020.jpeg" alt="open-day" />
+              </a>
+            </div>
+            <div class="swiper-slide col-12 col-lg-4">
+              <a class="Eventi__link" href="/static/eventi/locandina-l_altro-corpo.jpeg" target="_blank" rel="noopener">
+                <img class="thumbnail" src="static/eventi/locandina-l_altro-corpo.jpeg" alt="l-altro-corpo" />
+              </a>
+            </div>
+            <div class="swiper-slide col-12 col-lg-4">
               <a class="Eventi__link" href="/static/eventi/locandina-convegno-psicomotricita--full.jpg" target="_blank" rel="noopener">
                 <img class="thumbnail" src="static/eventi/locandina-convegno-psicomotricita.jpg" alt="convegno-psicomotricita" />
               </a>
@@ -566,11 +576,11 @@
           Formenti Luisa<br>
           Furini Tania<br>
           Garcia Victor<br>
-          Giuseppe Nicolodi<br>
           Guerra Lisi Stefania<br>
           Maffei Liliana<br>
           Maggioni Giordana<br>
           Marino Vincenzo<br>
+          Nicolodi Giuseppe<br>
           Protasoni Marina<br>
           Quilici Marco<br>
           Righetti Renata<br>
