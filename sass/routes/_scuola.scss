@@ -1,11 +1,22 @@
 .Scuola {
-  background: white;
+  background: $red;
+  color: white;
+
+  .Subtitle a {
+    color: #fff;
+    opacity: 0.5;
+  }
 
   .Section__content {
     text-align: center;
     
     img {
       @extend %Img;
+    }
+
+    .btn-outline-primary {
+      color: white;
+      border-color: white;
     }
     
     a:hover img {

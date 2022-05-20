@@ -6,4 +6,22 @@
     margin-left: auto;
     text-align: right;
   }
+
+  &__carousel {
+    max-width: 100%;
+    
+    @include media-breakpoint-up(lg) {
+      // max-height: 260px;
+      width: 500px;
+      margin: 0 0 0 $grid-gutter-width;
+    }
+
+    img {
+      @extend %Img;
+  
+      &:hover {
+        @extend %Img-hover;
+      }
+    }
+  }
 }

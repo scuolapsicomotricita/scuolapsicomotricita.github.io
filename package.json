@@ -8,9 +8,8 @@
     "rellax": "^1.12.1",
     "swiper": "^5.3.6"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "npx node-sass -w sass/** -o css/"
+    "start": "npx sass sass/index.scss css/index.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +17,8 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/kuus/scuolapsicomotricita.github.io#readme"
+  "homepage": "https://github.com/kuus/scuolapsicomotricita.github.io#readme",
+  "devDependencies": {
+    "sass": "1.32.0"
+  }
 }

@@ -22,6 +22,8 @@
   }
   
   &__carousel {
+    max-width: 100%;
+
     @include media-breakpoint-up(lg) {
       // max-height: 260px;
       width: 500px;
@@ -30,6 +32,10 @@
 
     img {
       @extend %Img;
+
+      @include media-breakpoint-down(md) {
+        max-height: 300px;
+      }
   
       &:hover {
         @extend %Img-hover;

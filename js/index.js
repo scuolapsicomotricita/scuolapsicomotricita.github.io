@@ -26,6 +26,17 @@ new Swiper (".Eventi__carousel", {
   },
 });
 
+new Swiper (".Professione__carousel", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".Carousel__arrows-next",
+    prevEl: ".Carousel__arrows-prev",
+  },
+});
+
 new Swiper (".Approccio__carousel", {
   loop: true,
   autoplay: {
