@@ -51,6 +51,15 @@
         color: white;
       } 
     }
+
+    img {
+      filter: grayscale(1);
+      transition: filter .15s ease;
+    }
+  }
+
+  &:hover .Intro__details img {
+    @extend %Img-hover;
   }
   
   &__carousel {

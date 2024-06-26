@@ -6887,7 +6887,7 @@ a.text-dark:hover, a.text-dark:focus {
   filter: grayscale(1);
 }
 
-.Approccio__carousel img:hover, .Professione__carousel img:hover, .Scuola .Section__content a:hover img, .Eventi__link:hover, .Intro__carousel img:hover {
+.Approccio__carousel img:hover, .Professione__carousel img:hover, .Scuola .Section__content a:hover img, .Eventi__link:hover, .Intro__carousel img:hover, .Intro:hover .Intro__details img {
   filter: grayscale(0);
 }
 
@@ -7156,6 +7156,10 @@ a.text-dark:hover, a.text-dark:focus {
 .Intro__details a:hover {
   color: white;
 }
+.Intro__details img {
+  filter: grayscale(1);
+  transition: filter 0.15s ease;
+}
 .Intro__carousel-content {
   padding: 1rem;
   font-size: 1.5rem;
@@ -7364,7 +7368,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 .Staff__docenti {
-  column-gap: 30px;
+  column-gap: 45px;
   padding-top: 2rem;
   column-count: 2;
 }
@@ -7377,6 +7381,33 @@ a.text-dark:hover, a.text-dark:focus {
   .Staff__docenti {
     column-count: 6;
   }
+}
+.Staff__docenti ul {
+  margin: 0 0 2em;
+}
+.Staff__docenti ul, .Staff__docenti li {
+  list-style: none;
+  line-height: 1.2;
+  padding: 0;
+}
+.Staff__docenti li, .Staff__docenti div {
+  margin: 0;
+  break-inside: avoid;
+}
+.Staff__docenti img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  transition: border-radius 0.3s ease-in-out, filter 0.3s ease-in-out;
+  border-radius: 0.75em;
+  filter: grayscale(1);
+}
+.Staff__docenti img:hover {
+  filter: grayscale(0);
+}
+.Staff__docenti span {
+  display: block;
+  margin-bottom: 1em;
 }
 
 img {

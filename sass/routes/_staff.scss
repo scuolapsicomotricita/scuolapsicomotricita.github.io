@@ -33,7 +33,7 @@
   }
 
   &__docenti {
-    column-gap: $grid-gutter-width;
+    column-gap: $grid-gutter-width * 1.5;
     padding-top: 2rem;
     column-count: 2;
     @include media-breakpoint-up(md) {
@@ -41,6 +41,41 @@
     }
     @include media-breakpoint-up(lg) {
       column-count: 6;
+    }
+
+    ul {
+      margin: 0 0 2em;
+    }
+
+    ul, li {
+      list-style: none;
+      line-height: 1.2;
+      padding: 0;
+    }
+
+    li, div {
+      margin: 0;
+      break-inside: avoid;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5em;
+
+      // @extend %Img;
+      transition: border-radius .3s ease-in-out, filter .3s ease-in-out;
+      border-radius: $border-radius / 4;
+      filter: grayscale(1);
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+
+    span {
+      display: block;
+      margin-bottom: 1em;
     }
   }
 }
